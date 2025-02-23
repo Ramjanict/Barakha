@@ -10,6 +10,7 @@ const Menu = () => {
       <NavLink>Career</NavLink>
       <NavLink>Contact</NavLink>
       <NavLink>Inquire now </NavLink>
+      <NavLink to="/test">test </NavLink>
     </>
   );
 };
