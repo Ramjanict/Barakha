@@ -2,6 +2,7 @@ import Card from "@/components/Card";
 import CommonContainer from "@/components/common/CommonContainer";
 import Slider from "@/components/Slider";
 import React from "react";
+import image from "../assets/images/5.png";
 const list = new Array(20).fill(null);
 const Home = () => {
   return (
@@ -13,6 +14,8 @@ const Home = () => {
           ))}
         </div>
       </CommonContainer>
+
+      <img className="rounded-full" src={image} alt="" />
     </div>
   );
 };
