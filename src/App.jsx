@@ -4,9 +4,10 @@ import { Route, Routes } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Navbar from "./components/ui/Navbar";
+import Navbar from "./section/Navbar/Navbar";
 import Footer from "./components/ui/Footer";
 import Test from "./pages/Test";
+import Wishlist from "./pages/Wishlist";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/test" element={<Test />} />
+        <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
       <Footer />
     </div>
