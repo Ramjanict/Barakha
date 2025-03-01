@@ -19,11 +19,11 @@ import CommonContainer from "@/components/common/CommonContainer";
 
 const Searchbar = () => {
   return (
-    <div className="px-0 cursor-pointer">
-      <Sheet>
-        <SheetTrigger asChild>
-          <div className=" max-w-fit">
-            <FaSearch />
+    <div className="w-4 px-0 cursor-pointer">
+      <Sheet className="">
+        <SheetTrigger className=""  asChild>
+          <div className="">
+          <FaSearch/>
           </div>
         </SheetTrigger>
         <CommonContainer>

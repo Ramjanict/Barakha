@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div
       className={
-        stricky ? "fixed shadow-xl z-10 w-full top-0 bg-white py-3" : "py-8"
+        stricky ? "fixed shadow-xl z-50 w-full top-0 bg-white py-3" : "py-8"
       }
     >
       <CommonContainer>
