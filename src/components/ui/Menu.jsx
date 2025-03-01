@@ -5,7 +5,7 @@ import Searchbar from "@/section/Navbar/Searchbar";
 const Menu = () => {
   return (
     <>
-      <div className="items-center hidden gap-3 text-lg lg:flex ">
+      <div className="items-center justify-between hidden gap-3 text-lg lg:flex ">
         <NavLink>Home</NavLink>
         <NavLink>About Us</NavLink>
         <NavLink>Products</NavLink>

@@ -28,7 +28,7 @@ const Header = () => {
           <div className="flex items-center gap-2 ">
             <SideMenu />
             <Link to="/">
-              <img className="pb-2  max-w-40" src={logo} alt="" />
+              <img className="pb-2 max-w-40" src={logo} alt="" />
             </Link>
           </div>
           <Menu />

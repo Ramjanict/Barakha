@@ -14,31 +14,40 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { FaSearch } from "react-icons/fa";
+import logo from "../../assets/images/logofinal.png";
+import CommonContainer from "@/components/common/CommonContainer";
 
 const Searchbar = () => {
   return (
-    <div className="cursor-pointer">
+    <div className="px-0 cursor-pointer">
       <Sheet>
         <SheetTrigger asChild>
-          <span className="p-0">
+          <div className=" max-w-fit">
             <FaSearch />
-          </span>
+          </div>
         </SheetTrigger>
-        <SheetContent side="top">
-          <SheetHeader>
-            <SheetTitle className="py-2">You can search here...</SheetTitle>
-          </SheetHeader>
+        <CommonContainer>
+          <SheetContent className="flex flex-col gap-4 md:px-16 " side="top">
+            <SheetHeader>
+              <SheetTitle className="py-">
+                <img className=" max-w-40" src={logo} alt="logo" />
+              </SheetTitle>
+            </SheetHeader>
 
-          <form className="w-full">
-            <label htmlFor="search"></label>
-            <input
-              className="w-full p-4 rounded-full outline "
-              id="search"
-              placeholder=" Search here ... "
-              type="search"
-            />
-          </form>
-        </SheetContent>
+            <form className="w-full">
+              <label className="flex items-center gap-1 pl-2 shadow-[0px_0px_5px_1px_rgba(0,0,0,.1)]">
+                <input
+                  className="w-full outline-none "
+                  placeholder="Search here ... "
+                  type="search"
+                />
+                <span className="p-4 text-xl text-white cursor-pointer bg-mainColor">
+                  <FaSearch />
+                </span>
+              </label>
+            </form>
+          </SheetContent>
+        </CommonContainer>
       </Sheet>
     </div>
   );

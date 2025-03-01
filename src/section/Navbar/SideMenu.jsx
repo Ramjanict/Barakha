@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Menu from "../../components/ui/Menu";
 import { Sheet, SheetContent, SheetTrigger } from "../../components/ui/sheet";
 import { CgMenuLeftAlt } from "react-icons/cg";
 const SideMenu = () => {
@@ -29,10 +28,10 @@ const SideMenu = () => {
               Contact
             </NavLink>
             <NavLink className="p-2 hover:text-white hover:bg-mainColor">
-              Inquire now{" "}
+              Inquire now
             </NavLink>
             <NavLink className="p-2 hover:text-white hover:bg-mainColor">
-              Inquire now{" "}
+              Inquire now
             </NavLink>
           </div>
         </SheetContent>
