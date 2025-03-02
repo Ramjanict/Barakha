@@ -21,9 +21,9 @@ const Searchbar = () => {
   return (
     <div className="w-4 px-0 cursor-pointer">
       <Sheet className="">
-        <SheetTrigger className=""  asChild>
-          <div className="">
-          <FaSearch/>
+        <SheetTrigger asChild>
+          <div className="transition-all hover:text-mainColor hover:scale-101">
+            <FaSearch />
           </div>
         </SheetTrigger>
         <CommonContainer>
