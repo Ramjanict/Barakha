@@ -6,27 +6,28 @@ import {
 } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import logo from "../../assets/images/footerlogo.png";
+import { Link } from "react-router-dom";
 
 const Social = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="max-w-40">
-        <img className="object-scale-down " src={logo} alt="logo" />
+        <img className="" src={logo} alt="logo" />
       </div>
       <div className="flex items-center gap-2 ">
-        <div>
+        <Link className="p-1 text-xl text-white rounded-md bg-mainColor">
           <FaWhatsapp />
-        </div>
-        <div>
+        </Link>
+        <div className="p-1 text-xl text-white rounded-md bg-mainColor">
           <FaFacebookMessenger />
         </div>
-        <div>
+        <div className="p-1 text-xl text-white rounded-md bg-mainColor">
           <FaInstagramSquare />
         </div>
-        <div>
+        <div className="p-1 text-xl text-white rounded-md bg-mainColor">
           <FaYoutube />
         </div>
-        <div>
+        <div className="p-1 text-xl text-white rounded-md bg-mainColor">
           <CgMail />
         </div>
       </div>
