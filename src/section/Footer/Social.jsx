@@ -18,7 +18,7 @@ const Social = () => {
         <Link className="p-1 text-xl text-white rounded-md bg-mainColor">
           <FaWhatsapp />
         </Link>
-        <div className="p-1 text-xl text-white rounded-md bg-mainColor">
+        <div className="p-1 text-xl text-white rounded-md bg-custom-gradient">
           <FaFacebookMessenger />
         </div>
         <div className="p-1 text-xl text-white rounded-md bg-mainColor">
