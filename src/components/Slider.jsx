@@ -43,7 +43,7 @@ const Ramjan = () => {
               <div className="relative w-full h-full">
                 <img
                   className="w-full h-[420px]  rounded-md"
-                  src={image}
+                  src={image2}
                   alt=""
                 />
                 <div className=" absolute top-1/2 left-16 transform translate-y-[-50%] space-y-2">
