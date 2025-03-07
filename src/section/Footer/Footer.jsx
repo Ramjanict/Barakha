@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className=" text-white bg-[#1C2431] py-8">
       <CommonContainer>
-        <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid w-full grid-cols-1 gap-4 mx-auto md:grid-cols-2 lg:grid-cols-4">
           <Social />
 
           <div>

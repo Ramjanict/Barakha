@@ -12,7 +12,7 @@ import image6 from "../assets/images/card89.jpg";
 import image7 from "../assets/images/card5541.jpg";
 import CommonSeparator from "./common/CommonSeparator";
 
-const sliderlist = [
+export const sliderlist = [
   { image: image1 },
   { image: image2 },
   { image: image3 },
@@ -25,9 +25,9 @@ const Ramjan = () => {
   const settings = {
     infinite: true,
     dots: true,
-    // speed: 1000,
-    // autoplay: true,
-    // speed: 2000,
+    speed: 1000,
+    autoplay: true,
+    speed: 2000,
     arrows: false,
     autoplaySpeed: 2000,
     cssEase: "linear",
