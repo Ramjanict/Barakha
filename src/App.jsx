@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Navbar from "./section/Navbar/Navbar";
 import Footer from "./section/Footer/Footer";
-import Test from "./pages/Test";
 import Wishlist from "./pages/Wishlist";
 
 const App = () => {
@@ -17,7 +16,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/test" element={<Test />} /> */}
         <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
       <Footer />

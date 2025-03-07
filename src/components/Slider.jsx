@@ -3,66 +3,49 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import image1 from "../assets/images/r1.jpg";
-import image2 from "../assets/images/2.webp";
-import image3 from "../assets/images/r3.webp";
-import image4 from "../assets/images/r4.webp";
+import image1 from "../assets/images/card1.jpg";
+import image2 from "../assets/images/card2.jpg";
+import image3 from "../assets/images/card2222.jpg";
 
+import image5 from "../assets/images/card8.jpg";
+import image6 from "../assets/images/card89.jpg";
+import image7 from "../assets/images/card5541.jpg";
+import CommonSeparator from "./common/CommonSeparator";
+
+const sliderlist = [
+  { image: image1 },
+  { image: image2 },
+  { image: image3 },
+
+  { image: image5 },
+  { image: image6 },
+  { image: image7 },
+];
 const Ramjan = () => {
   const settings = {
     infinite: true,
-    speed: 1000,
-    autoplay: true,
-    slidesToShow: 1,
+    dots: true,
+    // speed: 1000,
+    // autoplay: true,
+    // speed: 2000,
+    arrows: false,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    slidesToShow: 3,
     slidesToScroll: 1,
   };
   return (
-    <div className="py-5 bg-gray-600">
-      <div className="w-full px-4 mx-auto xl:container xl:px-16">
-        <div className="w-full h-[420px] gap-x-10 flex ">
-          <div className="w-full lg:w-[65%] h-full rounded-md display ">
-            <Slider {...settings}>
-              <div className="relative w-full h-full">
-                <img
-                  className="w-full h-[420px]  rounded-md"
-                  src={image1}
-                  alt=""
-                />
-                <div className=" absolute top-1/2 left-16 transform translate-y-[-50%] space-y-2">
-                  <h2 className=" uppercase text-5xl text-[#505050] font-bold">
-                    50% off
-                  </h2>
-                  <p className="text-[#545252] capitalize text-2xl">
-                    sleeve party dress
-                  </p>
-                  <button className="px-4 py-2 text-white capitalize rounded-md ltr hover:bg-left">
-                    buy now
-                  </button>
-                </div>
-              </div>
-              <div className="relative w-full h-full">
-                <img
-                  className="w-full h-[420px]  rounded-md"
-                  src={image2}
-                  alt=""
-                />
-                <div className=" absolute top-1/2 left-16 transform translate-y-[-50%] space-y-2">
-                  <h2 className=" uppercase text-5xl text-[#505050] font-bold">
-                    70% off
-                  </h2>
-                  <p className="text-[#545252] capitalize text-2xl">
-                    women clothing
-                  </p>
-                  <button className="px-4 py-2 text-white capitalize rounded-md ltr hover:bg-left">
-                    buy now
-                  </button>
-                </div>
-              </div>
-            </Slider>
-          </div>
-        </div>
+    <CommonSeparator>
+      <div className="w-full ">
+        <Slider {...settings}>
+          {sliderlist.map((item, i) => (
+            <div className="w-full h-full">
+              <img className="w-full " src={item.image} alt="slider" />
+            </div>
+          ))}
+        </Slider>
       </div>
-    </div>
+    </CommonSeparator>
   );
 };
 

@@ -2,7 +2,6 @@ import CommonContainer from "@/components/common/CommonContainer.jsx";
 import CommonSeparator from "@/components/common/CommonSeparator";
 import BentoFirst from "@/section/BentoFirst";
 import BentoSecond from "@/section/BentoSecond";
-import WishDelete from "@/section/WishDelete";
 
 const Wishlist = () => {
   return (
