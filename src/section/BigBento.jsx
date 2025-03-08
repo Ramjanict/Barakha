@@ -1,7 +1,6 @@
 import React from "react";
 import { IoMdHeart } from "react-icons/io";
-import card from "../assets/images/card1.jpg";
-import image1 from "../assets/images/Elachi.png";
+
 
 const BigBento = () => {
   return (
