@@ -73,3 +73,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

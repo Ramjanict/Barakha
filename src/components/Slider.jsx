@@ -76,8 +76,12 @@ const Ramjan = () => {
       <div className="w-full ">
         <Slider {...settings}>
           {sliderlist.map((item, i) => (
-            <div className="w-full min-h-96 ">
-              <img className="w-full h-full" src={item.image} alt="slider" />
+            <div className="w-full">
+              <img
+                className=" object-cover max-h-[600px]"
+                src={item.image}
+                alt="slider"
+              />
             </div>
           ))}
         </Slider>
