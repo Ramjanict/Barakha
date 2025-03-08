@@ -74,8 +74,8 @@
   }
 }
 
-.slick-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slider .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }

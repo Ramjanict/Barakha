@@ -63,20 +63,20 @@ const Ramjan = () => {
   const settings = {
     infinite: true,
     // dots: true,
-    // autoplay: true,
-    // speed: 2000,
-    // arrows: false,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    speed: 2000,
+    arrows: false,
+    autoplaySpeed: 2000,
     cssEase: "linear",
     slidesToShow: 3,
     slidesToScroll: 1,
   };
   return (
     <CommonSeparator>
-      <div className="w-full ">
+      <div className="w-full slider">
         <Slider {...settings}>
           {sliderlist.map((item, i) => (
-            <div className="w-full">
+            <div className="w-full bg-white">
               <img
                 className=" object-cover max-h-[600px]"
                 src={item.image}
