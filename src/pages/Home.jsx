@@ -2,15 +2,6 @@ import Card from "@/components/Card";
 import CommonContainer from "@/components/common/CommonContainer";
 import CommonSeparator from "@/components/common/CommonSeparator";
 import Ramjan, { sliderlist } from "@/components/Slider";
-// const sliderlist = [
-//   { image: image1 },
-//   { image: image2 },
-//   { image: image3 },
-
-//   { image: image5 },
-//   { image: image6 },
-//   { image: image7 },
-// ];
 const list = new Array(20).fill(null);
 const Home = () => {
   return (

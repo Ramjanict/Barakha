@@ -1,6 +1,6 @@
 import React from "react";
 import { IoMdHeart } from "react-icons/io";
-
+import image from "../assets/images/black-pepper.jpg";
 
 const BigBento = () => {
   return (
@@ -17,7 +17,7 @@ const BigBento = () => {
           <div className="w-10 h-10 bg-gray-50">
             <img
               className="w-full h-full rounded-full ring-1 ring-[#050505] p-2"
-              src={card}
+              src={image}
               alt=""
             />
           </div>
@@ -25,7 +25,7 @@ const BigBento = () => {
       </div>
 
       <div className=" bg-gray-50 max-h-72">
-        <img className="w-full h-full " src={image1} alt="bang" />
+        <img className="w-full h-full " src={image} alt="bang" />
       </div>
     </div>
   );

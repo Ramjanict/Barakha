@@ -14,7 +14,7 @@ import image8 from "../assets/images/green-mung-beans.webp";
 import image9 from "../assets/images/red-kidney-beans.jpg";
 import image10 from "../assets/images/white-kidney-bean.jpg";
 import image11 from "../assets/images/kabuli-chickpeas.jpg";
-import image12 from "../assets/images/red-lentils.webp";
+import image12 from "../assets/images/red-lentils.jpg";
 import image13 from "../assets/images/coffee-beans.jpg";
 import image14 from "../assets/images/raw-cashew-nuts.avif";
 import image15 from "../assets/images/processed-cashew-nuts.webp";
@@ -62,11 +62,11 @@ export const sliderlist = [
 const Ramjan = () => {
   const settings = {
     infinite: true,
-    dots: true,
-    autoplay: true,
-    speed: 2000,
-    arrows: false,
-    autoplaySpeed: 2000,
+    // dots: true,
+    // autoplay: true,
+    // speed: 2000,
+    // arrows: false,
+    // autoplaySpeed: 2000,
     cssEase: "linear",
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -76,8 +76,8 @@ const Ramjan = () => {
       <div className="w-full ">
         <Slider {...settings}>
           {sliderlist.map((item, i) => (
-            <div className="w-full h-full">
-              <img className="w-full " src={item.image} alt="slider" />
+            <div className="w-full min-h-96 ">
+              <img className="w-full h-full" src={item.image} alt="slider" />
             </div>
           ))}
         </Slider>
