@@ -3,13 +3,30 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import image1 from "../assets/images/card1.jpg";
-import image2 from "../assets/images/card2.jpg";
-import image3 from "../assets/images/card2222.jpg";
-
-import image5 from "../assets/images/card8.jpg";
-import image6 from "../assets/images/card89.jpg";
-import image7 from "../assets/images/card5541.jpg";
+import image1 from "../assets/images/copper-cathode.jpg";
+import image2 from "../assets/images/thermal-coal .avif";
+import image3 from "../assets/images/sunflower.jpg";
+import image4 from "../assets/images/soya-bean-oil.webp";
+import image5 from "../assets/images/cardamom.png";
+import image6 from "../assets/images/yellow-maize.jpg";
+import image7 from "../assets/images/white-maize.jpg";
+import image8 from "../assets/images/green-mung-beans.webp";
+import image9 from "../assets/images/red-kidney-beans.jpg";
+import image10 from "../assets/images/white-kidney-bean.jpg";
+import image11 from "../assets/images/kabuli-chickpeas.jpg";
+import image12 from "../assets/images/red-lentils.jpg";
+import image13 from "../assets/images/coffee-beans.jpg";
+import image14 from "../assets/images/raw-cashew-nuts.avif";
+import image15 from "../assets/images/processed-cashew-nuts.webp";
+import image16 from "../assets/images/peanuts.webp";
+import image17 from "../assets/images/pistachio-nuts.jpg";
+import image18 from "../assets/images/almond-nuts.jpg";
+import image119 from "../assets/images/cloves.webp";
+import image20 from "../assets/images/black-pepper.jpg";
+import image12 from "../assets/images/soya-bean.webp";
+import image22 from "../assets/images/sesame-seeds.webp";
+import image23 from "../assets/images/dry-chili.jpg";
+import image24 from "../assets/images/dates.jpg";
 import CommonSeparator from "./common/CommonSeparator";
 
 export const sliderlist = [
@@ -25,7 +42,6 @@ const Ramjan = () => {
   const settings = {
     infinite: true,
     dots: true,
-    speed: 1000,
     autoplay: true,
     speed: 2000,
     arrows: false,
