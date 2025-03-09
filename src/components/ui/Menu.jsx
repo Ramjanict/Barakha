@@ -3,7 +3,7 @@ import Searchbar from "@/section/Navbar/Searchbar";
 
 const navbarlists = [
   { label: "Home", link: "/" },
-  { label: "About-us", link: "/about-us" },
+  { label: "About Us", link: "/about-us" },
   { label: "Products", link: "/products" },
   { label: "Career", link: "/career" },
   { label: "Contact", link: "/contact" },
