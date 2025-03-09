@@ -25,7 +25,11 @@ const BigBento = () => {
       </div>
 
       <div className=" bg-gray-50 max-h-72">
-        <img className="w-full h-full " src={image} alt="bang" />
+        <img
+          className="w-full h-full mix-blend-multiply "
+          src={image}
+          alt="bang"
+        />
       </div>
     </div>
   );

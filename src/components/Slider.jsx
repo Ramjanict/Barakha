@@ -62,7 +62,6 @@ export const sliderlist = [
 const Ramjan = () => {
   const settings = {
     infinite: true,
-    // dots: true,
     autoplay: true,
     speed: 2000,
     arrows: false,
@@ -78,7 +77,7 @@ const Ramjan = () => {
           {sliderlist.map((item, i) => (
             <div className="w-full bg-white">
               <img
-                className=" object-cover max-h-[600px]"
+                className=" object-cover w-full  h-[400px]"
                 src={item.image}
                 alt="slider"
               />

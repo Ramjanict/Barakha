@@ -1,18 +1,25 @@
-import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Searchbar from "@/section/Navbar/Searchbar";
+
+const navbarlists = [
+  { label: "Home", link: "/" },
+  { label: "About-us", link: "/about-us" },
+  { label: "Products", link: "/products" },
+  { label: "Career", link: "/career" },
+  { label: "Contact", link: "/contact" },
+  { label: "Inquire now ", link: "/inqure" },
+  { label: "Wishlist", link: "/wishlist" },
+];
 
 const Menu = () => {
   return (
     <>
       <div className="items-center justify-between hidden gap-3 text-lg lg:flex ">
-        <NavLink>Home</NavLink>
-        <NavLink>About Us</NavLink>
-        <NavLink>Products</NavLink>
-        <NavLink>Career</NavLink>
-        <NavLink>Contact</NavLink>
-        <NavLink>Inquire now </NavLink>
-        <NavLink>Inquire now </NavLink>
+        {navbarlists.map((item, i) => (
+          <NavLink to={item.link} key={i}>
+            {item.label}
+          </NavLink>
+        ))}
         <Searchbar />
       </div>
     </>

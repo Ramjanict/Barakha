@@ -74,8 +74,13 @@
   }
 }
 
-.slider .slick-slide {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
+.slick-initialized .slick-track {
+  display: flex;
+  max-height: 400px;
+  }
+  .slick-initialized .slick-track .slick-slide {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  }
