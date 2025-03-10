@@ -1,7 +1,17 @@
-import React from "react";
-
+import CommonContainer from "@/components/common/CommonContainer";
+import Filter from "@/section/products/Filter";
+import ProductList from "@/section/products/ProductList";
 const Products = () => {
-  return <div>Products</div>;
+  return (
+    <div>
+      <CommonContainer>
+        <div className="flex ">
+          <Filter />
+          <ProductList />
+        </div>
+      </CommonContainer>
+    </div>
+  );
 };
 
 export default Products;
