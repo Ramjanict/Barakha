@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <div>
       <CommonContainer>
-        <div className="flex ">
+        <div className="flex items-center gap-1 pb-32">
           <Filter />
           <ProductList />
         </div>
