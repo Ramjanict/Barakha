@@ -1,6 +1,6 @@
 import Sort from "./Sort";
 import { productList } from "@/assets/data";
-import BarakaPagination from "@/components/barakaPagination";
+import BarakaPagination from "@/components/barakaPagination.jsx";
 import Card from "@/components/Card";
 
 const ProductList = () => {
