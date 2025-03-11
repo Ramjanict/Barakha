@@ -52,3 +52,44 @@ export const productList = [
   { image: image23 },
   { image: image24 },
 ];
+
+
+export const office = [
+  {
+    title: "Singapore office",
+    address: "138 JURONG GATEWAY ROAD,Singapore 600134.",
+    cell: "+65-91517201",
+    email: "head-office@barakha-enterprise.com",
+  },
+  {
+    title: "Bangladesh Office",
+    address: "House-1, Road-5, Block-G/1 Mirpur-2, Dhaka, Bangladesh",
+    cell: "+880-1982248470",
+    email: "BD-office@barakha-enterprise.com",
+  },
+  {
+    title: "Dubai Office",
+    address: "House-122, Salah Uddin Street,Al Muteena, Deira, Dubai, UAE",
+    cell: "971-508267926",
+    email: "UAE@ barakha-enterprise.com",
+  },
+  {
+    title: "Vietnam Office",
+    address: "No 21 Street 15, Tan Hung Ward, District 7, HCM City, Vietnam",
+    cell: "+84-796765222",
+    email: "Vn@ barakha-enterprise.com",
+  },
+  {
+    title: "Tanzania Office",
+    address: "NHC House, Samora Avenue,Dar es Salaam, Tanzania",
+    cell: "+255-759178179",
+    email: "Tanzania@barakha-enterprise.com",
+  },
+  {
+    title: "Indonesia Office",
+    address:
+      "Bakrie Tower Komplek Rasuna Epicentrum Jl. H. R. Rasuna Said Karet Kuningan, SetiabudiDKI Jakarta 12940, Indonesia",
+    cell: "+62-82142841381",
+    email: "Indonesia@barakha-enterprise.com",
+  },
+];

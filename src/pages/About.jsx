@@ -1,7 +1,7 @@
-import React from "react";
+import CommonContainer from "@/components/common/CommonContainer";
 
 const About = () => {
-  return <div>About</div>;
+  return <CommonContainer>About</CommonContainer>;
 };
 
 export default About;

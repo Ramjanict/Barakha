@@ -1,7 +1,7 @@
-import React from "react";
+import CommonContainer from "@/components/common/CommonContainer";
 
 const Inquire = () => {
-  return <div>Inquire</div>;
+  return <CommonContainer>Inquire</CommonContainer>;
 };
 
 export default Inquire;

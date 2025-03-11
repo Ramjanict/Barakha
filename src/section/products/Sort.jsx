@@ -7,19 +7,22 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-
+import { IoFilterOutline } from "react-icons/io5";
 const Sort = () => {
   return (
     <div className="flex items-center justify-between w-full">
       <div className="text-xl font-medium">
-        <h2>Product title with best title</h2>
+        <h2 className="hidden md:block">Product title with best title</h2>
+        <span className=" md:hidden">
+          <IoFilterOutline />
+        </span>
       </div>
 
       <div className="flex items-center gap-2">
         <div>
           <Select className="bg-red-500">
             <SelectTrigger className="w-[100px]  rounded-full">
-              <SelectValue placeholder="Theme" />
+              <SelectValue placeholder="Sort" />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="light">Latest</SelectItem>

@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { Sheet, SheetContent, SheetTrigger } from "../../components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "../../components/ui/sheet";
 import { CgMenuLeftAlt } from "react-icons/cg";
+import { navbarlists } from "@/components/ui/Menu";
 const SideMenu = () => {
   return (
     <div className=" lg:hidden">
@@ -12,27 +18,18 @@ const SideMenu = () => {
         </SheetTrigger>
         <SheetContent className="px-0 ">
           <div className="flex flex-col pt-4">
-            <NavLink className="p-2 hover:text-white hover:bg-mainColor">
-              Home
-            </NavLink>
-            <NavLink className="p-2 hover:text-white hover:bg-mainColor">
-              About Us
-            </NavLink>
-            <NavLink className="p-2 hover:text-white hover:bg-mainColor">
-              Products
-            </NavLink>
-            <NavLink className="p-2 hover:text-white hover:bg-mainColor">
-              Career
-            </NavLink>
-            <NavLink className="p-2 hover:text-white hover:bg-mainColor">
-              Contact
-            </NavLink>
-            <NavLink className="p-2 hover:text-white hover:bg-mainColor">
-              Inquire now
-            </NavLink>
-            <NavLink className="p-2 hover:text-white hover:bg-mainColor">
-              Inquire now
-            </NavLink>
+            {navbarlists.map((item, i) => (
+              <SheetClose asChild>
+                <NavLink
+                  asChild
+                  to={item.link}
+                  key={i}
+                  className="p-2 hover:text-white hover:bg-mainColor"
+                >
+                  {item.label}
+                </NavLink>
+              </SheetClose>
+            ))}
           </div>
         </SheetContent>
       </Sheet>

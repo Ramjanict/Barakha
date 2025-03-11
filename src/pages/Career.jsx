@@ -1,7 +1,7 @@
-import React from "react";
+import CommonContainer from "@/components/common/CommonContainer";
 
 const Career = () => {
-  return <div>Career</div>;
+  return <CommonContainer>Career</CommonContainer>;
 };
 
 export default Career;
