@@ -1,19 +1,22 @@
+import { productList } from "@/assets/data";
+import BarakaPagination from "@/components/barakaPagination";
 import Card from "@/components/Card";
 import CommonContainer from "@/components/common/CommonContainer";
 import CommonSeparator from "@/components/common/CommonSeparator";
-import Ramjan, { sliderlist } from "@/components/Slider";
-const list = new Array(20).fill(null);
+import HomeSlider from "@/components/HomeSlider";
+
 const Home = () => {
   return (
     <div className="">
-      <Ramjan />
+      <HomeSlider />
       <CommonContainer>
         <CommonSeparator>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {sliderlist.map((item, i) => (
+            {productList.map((item, i) => (
               <Card item={item} key={i} />
             ))}
           </div>
+          <BarakaPagination />
         </CommonSeparator>
       </CommonContainer>
     </div>
