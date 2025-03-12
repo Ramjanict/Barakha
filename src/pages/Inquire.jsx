@@ -1,7 +1,7 @@
 import CommonContainer from "@/components/common/CommonContainer";
 
 const Inquire = () => {
-  return <CommonContainer>Inquire</CommonContainer>;
+  return <CommonContainer></CommonContainer>;
 };
 
 export default Inquire;
