@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/pagination";
 const BarakaPagination = () => {
   return (
-    <Pagination>
+    <Pagination className="py-4">
       <PaginationContent>
         <PaginationItem>
           <PaginationPrevious href="#" />
