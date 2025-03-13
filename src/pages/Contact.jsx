@@ -1,4 +1,4 @@
-import { office } from "@/assets/data";
+import { office } from "@/assets/Data";
 import CommonContainer from "@/components/common/CommonContainer";
 import CommonSeparator from "@/components/common/CommonSeparator";
 import { CgMail } from "react-icons/cg";

@@ -1,4 +1,4 @@
-import { productList } from "@/assets/data";
+import { productList } from "@/assets/Data";
 import BarakaPagination from "@/section/BarakaPagination.jsx";
 import Card from "@/components/Card";
 import CommonContainer from "@/components/common/CommonContainer";

@@ -38,6 +38,7 @@ import image31 from "../assets/images/sugar.jpeg";
 import image32 from "../assets/images/meat.jpg";
 import image33 from "../assets/images/mug.jpg";
 
+import { GiMineralPearls } from "react-icons/gi";
 export const productList = [
   { image: image1, label: "Copper Cathode" },
   { image: image2, label: "Thermal Coal" },
@@ -75,14 +76,13 @@ export const productList = [
 
   { image: image28, label: "Coffee Bbeans" },
 
-  { image: image29, label: "Rubusta Ccoffee Bbean" },
+  { image: image29, label: "Robusta Coffee Bean" },
 
   { image: image30, label: "Dates" },
   { image: image31, label: "Sugar" },
   { image: image32, label: "Meat" },
   { image: image33, label: "Mug" },
 ];
-
 
 export const office = [
   {
@@ -122,4 +122,14 @@ export const office = [
     cell: "+62-82142841381",
     email: "Indonesia@barakha-enterprise.com",
   },
+];
+
+export const category = [
+  { title: "Metal & Minerals", icon: <GiMineralPearls /> },
+  { title: "Agriculture", icon: <GiMineralPearls /> },
+  { title: "Oil", icon: <GiMineralPearls /> },
+  { title: "Nuts", icon: <GiMineralPearls /> },
+  { title: "Spice", icon: <GiMineralPearls /> },
+  { title: "Coffee", icon: <GiMineralPearls /> },
+  { title: "Others", icon: <GiMineralPearls /> },
 ];
