@@ -7,9 +7,9 @@ import Navbar from "./section/Navbar/Navbar";
 import Footer from "./section/Footer/Footer";
 import Wishlist from "./pages/Wishlist";
 import Products from "./pages/Products";
-import Career from "./pages/Career";
 import Contact from "./pages/Contact";
 import Inquire from "./pages/Inquire";
+import AppSidebar from "./pages/AppSidebar ";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/career" element={<Career />} />
+        <Route path="/career" element={<AppSidebar />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/inquire-now" element={<Inquire />} />
         <Route path="/wishlist" element={<Wishlist />} />

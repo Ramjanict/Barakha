@@ -4,6 +4,7 @@ import CommonSeparator from "@/components/common/CommonSeparator";
 import { CgMail } from "react-icons/cg";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { FaLocationDot } from "react-icons/fa6";
+import ContactForm from "@/section/contact/ContactForm";
 const Contact = () => {
   return (
     <div>
@@ -38,6 +39,10 @@ const Contact = () => {
               </div>
             ))}
           </div>
+        </CommonSeparator>
+
+        <CommonSeparator>
+          <ContactForm />
         </CommonSeparator>
       </CommonContainer>
     </div>
