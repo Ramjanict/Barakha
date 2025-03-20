@@ -1,30 +1,16 @@
 import { category } from "@/assets/Data";
+import { useState } from "react";
 
-const Filter = () => {
+const Filter = ({ sidebar, setSidebar }) => {
   return (
-    <div className="w-[250px] hidden lg:block ">
-      <div className="flex flex-col gap-4 ">
-        {category.map((category) => (
-          <div className="flex items-center ">
-            <div>{category.icon}</div>
-            <h2 className="px-2 py-1">{category.title}</h2>
-          </div>
-        ))}
-      </div>
+    <div
+      className={`h-screen duration-300 ${
+        sidebar ? "w-16" : "w-60"
+      }  bg-secodColor rounded-md`}
+    >
+      <h3>ramjan</h3>
     </div>
   );
 };
 
 export default Filter;
-{
-  /* <div className="w-[250px] hidden lg:block ">
-<div className="flex flex-col gap-4 ">
-  {category.map((category) => (
-    <div className="flex items-center ">
-      <div>{category.icon}</div>
-      <h2 className="px-2 py-1">{category.title}</h2>
-    </div>
-  ))}
-</div>
-</div> */
-}

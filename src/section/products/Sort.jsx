@@ -8,9 +8,21 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { IoFilterOutline } from "react-icons/io5";
-const Sort = () => {
+import { TbLayoutSidebarLeftCollapseFilled } from "react-icons/tb";
+
+const Sort = ({ setSidebar, sidebar }) => {
   return (
     <div className="flex items-center justify-between w-full">
+      <div
+        onClick={() => {
+          setSidebar((pre) => !pre);
+        }}
+        className={`text-2xl cursor-pointer ${sidebar && "rotate-180"}`}
+      >
+        <span>
+          <TbLayoutSidebarLeftCollapseFilled />
+        </span>
+      </div>
       <div className="text-xl font-medium">
         <h2 className="hidden md:block">Product title with best title</h2>
         <span className=" md:hidden">
