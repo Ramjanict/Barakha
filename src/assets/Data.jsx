@@ -44,6 +44,8 @@ import { PiTreePalmBold } from "react-icons/pi";
 import { RiOilFill } from "react-icons/ri";
 import { GiHotSpices } from "react-icons/gi";
 import { GiCoffeeBeans } from "react-icons/gi";
+import { GiCoconuts } from "react-icons/gi";
+
 export const productList = [
   { image: image1, label: "Copper Cathode" },
   { image: image2, label: "Thermal Coal" },
@@ -133,7 +135,7 @@ export const category = [
   { title: "Metal & Minerals", icon: <GiMineralPearls /> },
   { title: "Agriculture", icon: <MdAgriculture /> },
   { title: "Oil", icon: <RiOilFill /> },
-  { title: "Nuts", icon: <GiMineralPearls /> },
+  { title: "Nuts", icon: <GiCoconuts /> },
   { title: "Spice", icon: <GiHotSpices /> },
   { title: "Coffee", icon: <GiCoffeeBeans /> },
   { title: "Others", icon: <GiMineralPearls /> },
