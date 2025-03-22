@@ -40,12 +40,11 @@ import image33 from "../assets/images/mug.jpg";
 
 import { GiMineralPearls } from "react-icons/gi";
 import { MdAgriculture } from "react-icons/md";
-import { PiTreePalmBold } from "react-icons/pi";
 import { RiOilFill } from "react-icons/ri";
 import { GiHotSpices } from "react-icons/gi";
 import { GiCoffeeBeans } from "react-icons/gi";
 import { GiCoconuts } from "react-icons/gi";
-
+import { TbMeat } from "react-icons/tb";
 export const productList = [
   { image: image1, label: "Copper Cathode" },
   { image: image2, label: "Thermal Coal" },
@@ -138,5 +137,5 @@ export const category = [
   { title: "Nuts", icon: <GiCoconuts /> },
   { title: "Spice", icon: <GiHotSpices /> },
   { title: "Coffee", icon: <GiCoffeeBeans /> },
-  { title: "Others", icon: <GiMineralPearls /> },
+  { title: "Others", icon: <TbMeat /> },
 ];

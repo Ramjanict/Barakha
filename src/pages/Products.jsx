@@ -7,7 +7,7 @@ const Products = () => {
   return (
     <div>
       <CommonContainer>
-        <div className="flex items-start gap-10">
+        <div className="flex items-start gap-10 pt-4">
           <Filter sidebar={sidebar} setSidebar={setSidebar} />
           <ProductList sidebar={sidebar} setSidebar={setSidebar} />
         </div>
