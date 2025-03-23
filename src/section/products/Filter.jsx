@@ -53,7 +53,7 @@ const Filter = ({ sidebar, setSidebar }) => {
                 </span>
               )}
             </div>
-            {dropdown === i && <Dropdown />}
+            {isRotated[i] && !sidebar && <Dropdown />}
           </div>
         ))}
       </div>
