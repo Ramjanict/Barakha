@@ -45,6 +45,7 @@ import { GiHotSpices } from "react-icons/gi";
 import { GiCoffeeBeans } from "react-icons/gi";
 import { GiCoconuts } from "react-icons/gi";
 import { TbMeat } from "react-icons/tb";
+import { list } from "postcss";
 export const productList = [
   { image: image1, label: "Copper Cathode" },
   { image: image2, label: "Thermal Coal" },
@@ -131,11 +132,62 @@ export const office = [
 ];
 
 export const category = [
-  { title: "Metal & Minerals", icon: <GiMineralPearls /> },
-  { title: "Agriculture", icon: <MdAgriculture /> },
-  { title: "Oil", icon: <RiOilFill /> },
-  { title: "Nuts", icon: <GiCoconuts /> },
-  { title: "Spice", icon: <GiHotSpices /> },
-  { title: "Coffee", icon: <GiCoffeeBeans /> },
-  { title: "Others", icon: <TbMeat /> },
+  {
+    title: "Metal & Minerals",
+    list: ["Copper Cathode", "Thermal Coal"],
+    icon: <GiMineralPearls />,
+  },
+  {
+    title: "Agriculture",
+    list: [
+      "Yellow Maize",
+      "White Maize",
+      "Green Mung Beans",
+      "Sesame Seeds",
+      "Red Lentils",
+      "Kidney Beans",
+      "Red Kidney Beans",
+      "White Kidney Beans",
+      "Kabuli Chickpeas",
+      "Lentils",
+    ],
+    icon: <MdAgriculture />,
+  },
+  {
+    title: "Oil",
+    list: [
+      "Sunflower Oil",
+      "Soya Bean Oil",
+      "Plam Oil",
+      "Coconut oil",
+      "Soya Bean",
+    ],
+    icon: <RiOilFill />,
+  },
+  {
+    title: "Nuts",
+    list: [
+      "Raw Cashew Nuts",
+      "Processed Cashew Nuts",
+      "Peanuts",
+      "Pistachio Nnuts.",
+      "Almond Nuts",
+    ],
+    icon: <GiCoconuts />,
+  },
+  {
+    title: "Spice",
+    list: ["Cardamom", "Cloves", "Black Pepper", "Dry Chili", "White Pepper"],
+    icon: <GiHotSpices />,
+  },
+  {
+    title: "Coffee",
+    list: ["Coffee Bbeans", "Robusta Coffee Bean"],
+    icon: <GiCoffeeBeans />,
+  },
+  {
+    title: "Others",
+    list: ["Dates", "Sugar", "Meat", "Mug"],
+    icon: <TbMeat />,
+  },
 ];

@@ -13,9 +13,6 @@ const Filter = ({ sidebar, setSidebar }) => {
     }));
     setDropdown((prev) => (prev === index ? null : index));
   };
-
-  console.log("isRotated", isRotated);
-  console.log("dropdown", dropdown);
   return (
     <div
       className={` transition-all duration-500  ${
@@ -53,7 +50,7 @@ const Filter = ({ sidebar, setSidebar }) => {
                 </span>
               )}
             </div>
-            {isRotated[i] && !sidebar && <Dropdown />}
+            {isRotated[i] && !sidebar && <Dropdown list={item.list} />}
           </div>
         ))}
       </div>
