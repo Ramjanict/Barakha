@@ -47,48 +47,48 @@ import { GiCoconuts } from "react-icons/gi";
 import { TbMeat } from "react-icons/tb";
 import { list } from "postcss";
 export const productList = [
-  { image: image1, label: "Copper Cathode" },
-  { image: image2, label: "Thermal Coal" },
+  { image: image1, label: "Copper Cathode", id: 1 },
+  { image: image2, label: "Thermal Coal", id: 2 },
 
-  { image: image3, label: "Sunflower Oil" },
-  { image: image4, label: "Soya Bean Oil" },
-  { image: image5, label: "Plam Oil" },
-  { image: image6, label: "Coconut oil" },
-  { image: image7, label: "Soya Bean" },
+  { image: image3, label: "Sunflower Oil", id: 3 },
+  { image: image4, label: "Soya Bean Oil", id: 4 },
+  { image: image5, label: "Plam Oil", id: 5 },
+  { image: image6, label: "Coconut oil", id: 6 },
+  { image: image7, label: "Soya Bean", id: 7 },
 
-  { image: image8, label: "Yellow Maize" },
-  { image: image9, label: "White Maize" },
-  { image: image10, label: "Green Mung Beans" },
+  { image: image8, label: "Yellow Maize", id: 8 },
+  { image: image9, label: "White Maize", id: 9 },
+  { image: image10, label: "Green Mung Beans", id: 10 },
 
-  { image: image11, label: "Sesame Seeds" },
-  { image: image12, label: "Red Lentils" },
-  { image: image13, label: "Kidney Beans" },
+  { image: image11, label: "Sesame Seeds", id: 11 },
+  { image: image12, label: "Red Lentils", id: 12 },
+  { image: image13, label: "Kidney Beans", id: 13 },
 
-  { image: image14, label: "Red Kidney Beans" },
-  { image: image15, label: "White Kidney Beans" },
-  { image: image16, label: "Kabuli Chickpeas" },
-  { image: image17, label: "Lentils" },
+  { image: image14, label: "Red Kidney Beans", id: 14 },
+  { image: image15, label: "White Kidney Beans", id: 15 },
+  { image: image16, label: "Kabuli Chickpeas", id: 16 },
+  { image: image17, label: "Lentils", id: 17 },
 
-  { image: image18, label: "Raw Cashew Nuts" },
-  { image: image19, label: "Processed Cashew Nuts" },
-  { image: image20, label: "Peanuts" },
-  { image: image21, label: "Pistachio Nnuts." },
-  { image: image22, label: "Almond Nuts" },
+  { image: image18, label: "Raw Cashew Nuts", id: 18 },
+  { image: image19, label: "Processed Cashew Nuts", id: 19 },
+  { image: image20, label: "Peanuts", id: 20 },
+  { image: image21, label: "Pistachio Nnuts.", id: 21 },
+  { image: image22, label: "Almond Nuts", id: 22 },
 
-  { image: image23, label: "Cardamom" },
-  { image: image24, label: "Cloves" },
-  { image: image25, label: "Black Pepper" },
-  { image: image26, label: "Dry Chili" },
-  { image: image27, label: "White Pepper" },
+  { image: image23, label: "Cardamom", id: 23 },
+  { image: image24, label: "Cloves", id: 24 },
+  { image: image25, label: "Black Pepper", id: 25 },
+  { image: image26, label: "Dry Chili", id: 26 },
+  { image: image27, label: "White Pepper", id: 27 },
 
-  { image: image28, label: "Coffee Bbeans" },
+  { image: image28, label: "Coffee Bbeans", id: 28 },
 
-  { image: image29, label: "Robusta Coffee Bean" },
+  { image: image29, label: "Robusta Coffee Bean", id: 29 },
 
-  { image: image30, label: "Dates" },
-  { image: image31, label: "Sugar" },
-  { image: image32, label: "Meat" },
-  { image: image33, label: "Mug" },
+  { image: image30, label: "Dates", id: 30 },
+  { image: image31, label: "Sugar", id: 31 },
+  { image: image32, label: "Meat", id: 32 },
+  { image: image33, label: "Mug", id: 33 },
 ];
 
 export const office = [

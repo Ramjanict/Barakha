@@ -11,7 +11,7 @@ const ProductList = ({ setSidebar, sidebar }) => {
       </div>
       <div className="grid grid-cols-1 gap-4 py-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {productList.map((item, i) => (
-          <Card item={item} key={i} />
+          <Card item={item} key={i} id={item.id} />
         ))}
       </div>
       <BarakaPagination />
