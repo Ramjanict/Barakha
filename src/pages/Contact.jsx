@@ -1,6 +1,6 @@
 import { office } from "@/assets/Data";
-import CommonContainer from "@/components/common/CommonContainer";
-import CommonSeparator from "@/components/common/CommonSeparator";
+import CommonContainer from "@/common/CommonContainer";
+import CommonSeparator from "@/common/CommonSeparator";
 import { CgMail } from "react-icons/cg";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { FaLocationDot } from "react-icons/fa6";

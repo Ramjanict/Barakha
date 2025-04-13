@@ -1,5 +1,5 @@
 import React from "react";
-import CommonContainer from "../../components/common/CommonContainer";
+import CommonContainer from "../../common/CommonContainer";
 import Social from "./Social";
 import { FaLocationDot } from "react-icons/fa6";
 import { CgMail } from "react-icons/cg";

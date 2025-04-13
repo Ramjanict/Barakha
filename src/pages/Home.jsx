@@ -1,8 +1,8 @@
 import { productList } from "@/assets/Data";
 import BarakaPagination from "@/section/BarakaPagination.jsx";
 import Card from "@/components/Card";
-import CommonContainer from "@/components/common/CommonContainer";
-import CommonSeparator from "@/components/common/CommonSeparator";
+import CommonContainer from "@/common/CommonContainer";
+import CommonSeparator from "@/common/CommonSeparator";
 import HomeSlider from "@/components/HomeSlider";
 
 const Home = () => {

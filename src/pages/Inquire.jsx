@@ -1,4 +1,4 @@
-import CommonContainer from "@/components/common/CommonContainer";
+import CommonContainer from "@/common/CommonContainer";
 
 const Inquire = () => {
   return <CommonContainer></CommonContainer>;

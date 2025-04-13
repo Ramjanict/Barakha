@@ -10,7 +10,7 @@ const Card = ({ item, id }) => {
       className=" shadow-[0_0_1px_1px_rgba(0,0,0,.05)] font-geist flex  flex-col items-center  rounded-2xl relative cursor-pointer group gap-20  p-4 hover:translate-y-[-8px] transition-all duration-500 hover:shadow-[-2px_2px_5px_rgba(0,0,0,.5)]"
     >
       <div className="flex justify-between w-full ">
-        <h2 className="text-[#050505] text-xl">{item.label}</h2>
+        <h2 className="text-[#050505] text-xl">{item?.label}</h2>
         <span className="z-10 p-2 text-2xl bg-white rounded-full ">
           <IoMdHeartEmpty />
         </span>

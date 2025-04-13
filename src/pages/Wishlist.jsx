@@ -1,5 +1,5 @@
-import CommonContainer from "@/components/common/CommonContainer.jsx";
-import CommonSeparator from "@/components/common/CommonSeparator";
+import CommonContainer from "@/common/CommonContainer.jsx";
+import CommonSeparator from "@/common/CommonSeparator";
 import BentoFirst from "@/section/BentoFirst";
 import BentoSecond from "@/section/BentoSecond";
 

@@ -1,4 +1,4 @@
-import CommonContainer from "@/components/common/CommonContainer";
+import CommonContainer from "@/common/CommonContainer";
 import Menu from "@/components/ui/Menu";
 import SideMenu from "@/section/Navbar/SideMenu";
 import React, { useEffect, useState } from "react";

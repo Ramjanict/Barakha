@@ -1,4 +1,4 @@
-import CommonContainer from "@/components/common/CommonContainer";
+import CommonContainer from "@/common/CommonContainer";
 import Filter from "@/section/products/Filter";
 import ProductList from "@/section/products/ProductList";
 import { useState } from "react";

@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
-import CommonContainer from "@/components/common/CommonContainer";
+import CommonContainer from "@/common/CommonContainer";
 
 const Breadcrumbs = () => {
   return (

@@ -1,5 +1,5 @@
-import CommonContainer from "@/components/common/CommonContainer";
-import CommonSeparator from "@/components/common/CommonSeparator";
+import CommonContainer from "@/common/CommonContainer";
+import CommonSeparator from "@/common/CommonSeparator";
 
 const About = () => {
   return (

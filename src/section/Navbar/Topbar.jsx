@@ -5,7 +5,7 @@ import es from "../../assets/images/es.png";
 import pt from "../../assets/images/pt.png";
 import vi from "../../assets/images/vi.png";
 import { FaRegHandPointRight } from "react-icons/fa";
-import CommonContainer from "@/components/common/CommonContainer";
+import CommonContainer from "@/common/CommonContainer";
 const Topbar = () => {
   return (
     <div className="bg-mainColor ">

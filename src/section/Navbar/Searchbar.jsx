@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/sheet";
 import { FaSearch } from "react-icons/fa";
 import logo from "../../assets/images/logofinal.png";
-import CommonContainer from "@/components/common/CommonContainer";
+import CommonContainer from "@/common/CommonContainer";
 
 const Searchbar = () => {
   return (
