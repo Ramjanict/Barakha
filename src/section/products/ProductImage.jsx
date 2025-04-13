@@ -1,4 +1,4 @@
-import img from "../assets/images/soya-bean-oil.webp";
+import img from "../../assets/images/sunflower-oil.jpg";
 
 const ProductImage = () => {
   return (

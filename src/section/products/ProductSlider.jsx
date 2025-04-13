@@ -6,10 +6,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import img1 from "../assets/images/soya-bean.webp";
-import img2 from "../assets/images/kidney-beans.webp";
-import img3 from "../assets/images/cardamom.png";
-import img4 from "../assets/images/black-pepper.jpg";
+import img1 from "../../assets/images/green-mung-beans.webp";
+import img2 from "../../assets/images/kidney-beans.webp";
+import img3 from "../../assets/images/cardamom.png";
+import img4 from "../../assets/images/black-pepper.jpg";
 const sliderList = [
   { id: 1, img: img1 },
   { id: 2, img: img2 },

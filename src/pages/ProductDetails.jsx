@@ -1,7 +1,7 @@
 import CommonContainer from "@/common/CommonContainer";
-import ProductContent from "@/components/ProductContent";
-import ProductImage from "@/components/ProductImage";
-import ProductSlider from "@/components/ProductSlider";
+import ProductContent from "@/section/products/ProductContent";
+import ProductImage from "@/section/products/ProductImage";
+import ProductSlider from "@/section/products/ProductSlider";
 import { useState } from "react";
 
 const ProductDetails = () => {
