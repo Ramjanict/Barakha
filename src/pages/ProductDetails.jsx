@@ -5,7 +5,7 @@ import ProductSlider from "@/section/products/ProductSlider";
 import { useState } from "react";
 
 const ProductDetails = () => {
-  const [image, setImage] = useState();
+  const [image, setImage] = useState("");
   return (
     <CommonContainer>
       <div className="flex flex-col w-full gap-5 py-10 md:flex-row md:gap-10">
