@@ -21,10 +21,10 @@ const HomeSlider = () => {
       <div className="w-full slider">
         <Slider {...settings}>
           {productList.map((item, i) => (
-            <div className="w-full bg-white">
+            <div key={i} className="w-full bg-white">
               <img
                 className=" object-cover w-full  lg:h-[400px]"
-                src={item.image}
+                src={item.image[0]}
                 alt="slider"
               />
             </div>

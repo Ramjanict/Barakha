@@ -18,6 +18,7 @@ const sliderList = [
   { id: 5, img: img2 },
   { id: 6, img: img1 },
 ];
+
 const ProductSlider = () => {
   return (
     <div>
@@ -29,10 +30,10 @@ const ProductSlider = () => {
       >
         <CarouselContent>
           {sliderList.map((item, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4 ">
+            <CarouselItem key={index} className=" basis-1/4">
               <div className="p-1 ">
                 <img
-                  className="w-20 h-20 rounded-lg cursor-pointer ring-1 ring-gray-200"
+                  className="w-20 h-20 rounded-lg cursor-pointer ring-1 ring-gray-200 "
                   src={item.img}
                   alt=""
                 />
@@ -40,8 +41,10 @@ const ProductSlider = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <div className="hidden sm:block">
+          <CarouselPrevious />
+          <CarouselNext />
+        </div>
       </Carousel>
     </div>
   );
