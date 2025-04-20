@@ -2,13 +2,25 @@ import CommonContainer from "@/common/CommonContainer";
 import ProductContent from "@/section/products/ProductContent";
 import ProductImage from "@/section/products/ProductImage";
 import ProductSlider from "@/section/products/ProductSlider";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { productList } from "../assets/Data";
 import { useParams } from "react-router-dom";
 const ProductDetails = () => {
   const { id } = useParams();
 
-  const product = productList.find((item) => item.id === Number(id));
+  // Memoize product to avoid unnecessary re-calculations
+  const product = useMemo(() => {
+    return productList.find((item) => item.id === Number(id));
+  }, [id]);
+
+  if (!product) {
+    return (
+      <CommonContainer>
+        <div className="py-10 text-center text-red-500">Product not found.</div>
+      </CommonContainer>
+    );
+  }
+
   console.log("product", product);
 
   return (
