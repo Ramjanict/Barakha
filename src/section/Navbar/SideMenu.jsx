@@ -19,11 +19,10 @@ const SideMenu = () => {
         <SheetContent className="px-0 ">
           <div className="flex flex-col pt-4">
             {navbarlists.map((item, i) => (
-              <SheetClose asChild>
+              <SheetClose key={i} asChild>
                 <NavLink
                   asChild
                   to={item.link}
-                  key={i}
                   className="p-2 hover:text-white hover:bg-mainColor"
                 >
                   {item.label}
