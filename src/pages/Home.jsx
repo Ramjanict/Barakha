@@ -1,4 +1,3 @@
-import { productList } from "@/assets/Data";
 import BarakaPagination from "@/section/BarakaPagination.jsx";
 import Card from "@/components/Card";
 import CommonContainer from "@/common/CommonContainer";
@@ -8,7 +7,7 @@ import { products } from "@/store/AppStore";
 
 const Home = () => {
   const { data } = products();
-  console.log("AppStore", data);
+
   return (
     <div className="">
       <HomeSlider />

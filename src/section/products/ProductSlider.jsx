@@ -6,7 +6,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const ProductSlider = ({ product }) => {
+const ProductSlider = ({ product, handleActiveImage }) => {
   return (
     <div>
       <Carousel
@@ -17,10 +17,15 @@ const ProductSlider = ({ product }) => {
       >
         <CarouselContent>
           {product?.image.map((item, index) => (
-            <CarouselItem key={index} className=" basis-1/4">
-              <div className="p-1 ">
+            <CarouselItem key={index} className=" basis-1/4 !ml-0">
+              <div
+                onClick={() => {
+                  handleActiveImage(index);
+                }}
+                className="p-1 "
+              >
                 <img
-                  className="w-20 h-20 rounded-lg cursor-pointer ring-1 ring-gray-200 "
+                  className="w-20 h-20 rounded-lg cursor-pointer lg:w-20 lg:h-20 ring-1 ring-gray-200"
                   src={item}
                   alt=""
                 />
@@ -28,7 +33,7 @@ const ProductSlider = ({ product }) => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="hidden sm:block">
+        <div className="hidden lg:block">
           <CarouselPrevious />
           <CarouselNext />
         </div>
