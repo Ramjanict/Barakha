@@ -22,10 +22,13 @@ const ProductSlider = ({ product, handleActiveImage }) => {
                 onClick={() => {
                   handleActiveImage(index);
                 }}
-                className="p-1 "
+                onMouseEnter={() => {
+                  handleActiveImage(index);
+                }}
+                className="w-20 h-20 p-1"
               >
                 <img
-                  className="w-20 h-20 rounded-lg cursor-pointer lg:w-20 lg:h-20 ring-1 ring-gray-200"
+                  className="object-scale-down w-full h-full transition-all rounded-lg cursor-pointer mix-blend-multiply ring-1 ring-gray-200"
                   src={item}
                   alt=""
                 />

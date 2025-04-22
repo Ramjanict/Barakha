@@ -7,6 +7,7 @@ import {
 import { CgMail } from "react-icons/cg";
 import logo from "../../assets/images/footerlogo.png";
 import { Link } from "react-router-dom";
+import Icons from "@/common/Icons";
 
 const Social = () => {
   return (
@@ -14,23 +15,7 @@ const Social = () => {
       <div className="max-w-40">
         <img className="" src={logo} alt="logo" />
       </div>
-      <div className="flex items-center gap-2 ">
-        <Link className="p-1 text-xl text-white rounded-md bg-mainColor">
-          <FaWhatsapp />
-        </Link>
-        <div className="p-1 text-xl text-white rounded-md bg-mainColor">
-          <FaFacebookMessenger />
-        </div>
-        <div className="p-1 text-xl text-white rounded-md bg-mainColor">
-          <FaInstagramSquare />
-        </div>
-        <div className="p-1 text-xl text-white rounded-md bg-mainColor">
-          <FaYoutube />
-        </div>
-        <div className="p-1 text-xl text-white rounded-md bg-mainColor">
-          <CgMail />
-        </div>
-      </div>
+      <Icons />
     </div>
   );
 };
