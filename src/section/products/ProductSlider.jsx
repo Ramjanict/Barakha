@@ -17,7 +17,7 @@ const ProductSlider = ({ product, handleActiveImage }) => {
       >
         <CarouselContent>
           {product?.image.map((item, index) => (
-            <CarouselItem key={index} className=" basis-1/4 !ml-0">
+            <CarouselItem key={index} className=" basis-1/4">
               <div
                 onClick={() => {
                   handleActiveImage(index);
@@ -25,7 +25,7 @@ const ProductSlider = ({ product, handleActiveImage }) => {
                 onMouseEnter={() => {
                   handleActiveImage(index);
                 }}
-                className="w-20 h-20 p-1"
+                className="w-16 h-16 p-1 sm:w-20 sm:h-20"
               >
                 <img
                   className="object-scale-down w-full h-full transition-all rounded-lg cursor-pointer mix-blend-multiply ring-1 ring-gray-200"

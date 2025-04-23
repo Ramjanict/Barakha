@@ -7,7 +7,7 @@ const ProductImage = ({
   zoomImageCooridinate,
 }) => {
   return (
-    <div className="relative ">
+    <div className="relative w-[320px] sm:w-[100%] sm:h-[600px] p-2 sm:p-0">
       <img
         onMouseMove={handleZoomImage}
         onMouseLeave={handleLeaveImageZoom}
