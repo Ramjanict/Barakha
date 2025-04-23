@@ -1,9 +1,11 @@
+import ScrollTop from "@/common/ScrollTop";
 import React from "react";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { Link } from "react-router-dom";
 const Card = ({ product, id }) => {
   return (
     <Link
+      onClick={ScrollTop}
       to={`/products/${id}`}
       className=" shadow-[0_0_1px_1px_rgba(0,0,0,.05)] font-geist flex  flex-col items-center  rounded-2xl relative cursor-pointer group gap-20  p-4 hover:translate-y-[-8px] transition-all duration-500 hover:shadow-[-2px_2px_5px_rgba(0,0,0,.5)]"
     >

@@ -1,13 +1,5 @@
-import {
-  FaFacebookMessenger,
-  FaInstagramSquare,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa";
-import { CgMail } from "react-icons/cg";
 import logo from "../../assets/images/footerlogo.png";
-import { Link } from "react-router-dom";
-import Icons from "@/common/Icons";
+import SocialMedia from "@/common/SocialMedia";
 
 const Social = () => {
   return (
@@ -15,7 +7,7 @@ const Social = () => {
       <div className="max-w-40">
         <img className="" src={logo} alt="logo" />
       </div>
-      <Icons />
+      <SocialMedia />
     </div>
   );
 };

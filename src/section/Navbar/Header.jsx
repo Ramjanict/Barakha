@@ -6,14 +6,13 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/logofinal.png";
 import { FaWhatsapp } from "react-icons/fa";
 import Searchbar from "./Searchbar";
-import Night from "./Night";
 
 const Header = () => {
   const [stricky, setStricky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setStricky(window.scrollY > 250);
+      setStricky(window.scrollY > 100);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

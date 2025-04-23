@@ -5,8 +5,9 @@ import ProductSlider from "@/section/products/ProductSlider";
 import { useCallback, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "@/store/AppStore";
-import Social from "@/section/Footer/Social";
-import { Icons } from "react-toastify";
+import SocialMedia from "@/common/SocialMedia";
+import RelatedProduct from "@/section/products/RelatedProduct";
+
 const ProductDetails = () => {
   const { data } = products();
   const { id } = useParams();
@@ -14,7 +15,12 @@ const ProductDetails = () => {
   const product = useMemo(() => {
     return data?.find((item) => item.id === Number(id));
   }, [id]);
+  const Relatedproduct = useMemo(() => {
+    return data?.filter((item) => item.id !== Number(id));
+  }, [id]);
 
+  console.log("product", product);
+  console.log("Relatedproduct", Relatedproduct);
   if (!product) {
     return (
       <CommonContainer>
@@ -71,8 +77,11 @@ const ProductDetails = () => {
         </div>
         <div className="w-full md:w-1/2">
           <ProductContent product={product} />
-          <Icons />
+          <SocialMedia />
         </div>
+      </div>
+      <div>
+        <RelatedProduct Relatedproduct={Relatedproduct} />
       </div>
     </CommonContainer>
   );

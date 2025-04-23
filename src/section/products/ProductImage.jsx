@@ -1,5 +1,3 @@
-import img from "../../assets/images/sunflower-oil.jpg";
-
 const ProductImage = ({
   product,
   activeImage,
@@ -9,7 +7,7 @@ const ProductImage = ({
   zoomImageCooridinate,
 }) => {
   return (
-    <div className="relative w-[300px] h-[300px] lg:w-96 lg:h-96 ">
+    <div className="relative ">
       <img
         onMouseMove={handleZoomImage}
         onMouseLeave={handleLeaveImageZoom}

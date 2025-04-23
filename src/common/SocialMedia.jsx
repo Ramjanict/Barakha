@@ -8,18 +8,19 @@ import { CgMail } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
 const icons = [
-  { path: "/whatsapp", icon: FaWhatsapp },
-  { path: "/messenger", icon: FaFacebookMessenger },
-  { path: "/instagram", icon: FaInstagramSquare },
-  { path: "/youtube", icon: FaYoutube },
-  { path: "/mail", icon: CgMail },
+  { path: "/whatsapp", label: "whatsapp", icon: FaWhatsapp },
+  { path: "/messenger", label: "messenger", icon: FaFacebookMessenger },
+  { path: "/instagram", label: "instagram", icon: FaInstagramSquare },
+  { path: "/youtube", label: "youtube", icon: FaYoutube },
+  { path: "/mail", label: "mail", icon: CgMail },
 ];
 
-const Icons = () => {
+const SocialMedia = () => {
   return (
     <div className="flex items-center gap-2">
       {icons.map((icon, index) => (
         <Link
+          title={icon.label}
           key={index}
           to={icon.path}
           className="p-1 text-xl text-white rounded-md bg-mainColor"
@@ -31,4 +32,4 @@ const Icons = () => {
   );
 };
 
-export default Icons;
+export default SocialMedia;
