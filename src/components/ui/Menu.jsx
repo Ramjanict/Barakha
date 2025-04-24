@@ -1,15 +1,15 @@
 import { NavLink } from "react-router-dom";
 import Searchbar from "@/section/Navbar/Searchbar";
 
- export const navbarlists = [
-   { label: "Home", link: "/" },
-   { label: "About Us", link: "/about-us" },
-   { label: "Products", link: "/products" },
-   { label: "Career", link: "/career" },
-   { label: "Contact", link: "/contact" },
-   { label: "Inquire now ", link: "/inqure" },
-   { label: "Wishlist", link: "/wishlist" },
- ];
+export const navbarlists = [
+  { label: "Home", link: "/" },
+  { label: "Products", link: "/products" },
+  { label: "About Us", link: "/about-us" },
+  { label: "Career", link: "/career" },
+  { label: "Contact", link: "/contact" },
+  { label: "Inquire now ", link: "/inqure" },
+  { label: "Wishlist", link: "/wishlist" },
+];
 
 const Menu = () => {
   return (

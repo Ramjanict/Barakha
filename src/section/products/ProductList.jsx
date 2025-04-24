@@ -4,7 +4,6 @@ import BarakaPagination from "@/section/BarakaPagination.jsx";
 import Card from "@/components/Card";
 
 const ProductList = ({ setSidebar, sidebar }) => {
-  console.log("productList", productList);
   return (
     <div className="flex-1 ">
       <div>

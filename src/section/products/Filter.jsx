@@ -3,15 +3,13 @@ import { useState } from "react";
 import { RiArrowRightSLine } from "react-icons/ri";
 import Dropdown from "./Dropdown";
 const Filter = ({ sidebar, setSidebar }) => {
-  const [dropdown, setDropdown] = useState(null);
   const [isRotated, setIsRotated] = useState({});
-
+  console.log("isRotated", isRotated);
   const handleClick = (index) => {
     setIsRotated((pre) => ({
       ...pre,
       [index]: !pre[index],
     }));
-    setDropdown((prev) => (prev === index ? null : index));
   };
   return (
     <div
@@ -27,12 +25,7 @@ const Filter = ({ sidebar, setSidebar }) => {
               handleClick(i);
             }}
           >
-            <div
-              onClick={() => {
-                setDropdown((pre) => !pre);
-              }}
-              className="flex items-center justify-between  cursor-pointer transition-all  hover:bg-[#F4F4F5] p-1 rounded-md "
-            >
+            <div className="flex items-center justify-between  cursor-pointer transition-all  hover:bg-[#F4F4F5] p-1 rounded-md ">
               <div className="flex items-center gap-1">
                 <div className="text-3xl ">{item.icon}</div>
                 <span className={`${sidebar && " transition-all  hidden"} `}>
