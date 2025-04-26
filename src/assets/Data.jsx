@@ -36,7 +36,6 @@ import image29 from "../assets/images/rubusta-coffee-bean.jpg";
 import image30 from "../assets/images/dates.jpg";
 import image31 from "../assets/images/sugar.jpeg";
 import image32 from "../assets/images/meat.jpg";
-import image33 from "../assets/images/mug.jpg";
 
 import { GiMineralPearls } from "react-icons/gi";
 import { MdAgriculture } from "react-icons/md";
@@ -53,6 +52,7 @@ export const productList = [
     slug: "copper-cathode",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error.",
     image: [image1, image12, image3, image5, image6, image9],
+    category: "Metal & Minerals",
   },
   {
     id: 2,
@@ -60,6 +60,7 @@ export const productList = [
     slug: "thermal-coal",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image2, image4, image2, image2],
+    category: "Metal & Minerals",
   },
   {
     id: 3,
@@ -67,6 +68,7 @@ export const productList = [
     slug: "sunflower-oil",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image3, image9, image6, image3],
+    category: "oil",
   },
   {
     id: 4,
@@ -74,6 +76,7 @@ export const productList = [
     slug: "soya-bean-oil",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image4, image10, image4, image5],
+    category: "oil",
   },
   {
     id: 5,
@@ -88,6 +91,7 @@ export const productList = [
     slug: "coconut-oil",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image6, image18, image17, image6],
+    category: "oil",
   },
   {
     id: 7,
@@ -95,6 +99,7 @@ export const productList = [
     slug: "soya-bean",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image7, image7, image7, image7],
+    category: "oil",
   },
   {
     id: 8,
@@ -102,6 +107,7 @@ export const productList = [
     slug: "yellow-maize",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image8, image8, image8, image8],
+    category: "Agriculture",
   },
   {
     id: 9,
@@ -109,6 +115,7 @@ export const productList = [
     slug: "white-maize",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image9, image9, image9, image9],
+    category: "Agriculture",
   },
   {
     id: 10,
@@ -116,6 +123,7 @@ export const productList = [
     slug: "green-mung-beans",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error.",
     image: [image10, image10, image10, image10],
+    category: "Agriculture",
   },
   {
     id: 11,
@@ -123,6 +131,7 @@ export const productList = [
     slug: "sesame-seeds",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image11, image11, image11, image11],
+    category: "Agriculture",
   },
   {
     id: 12,
@@ -130,6 +139,7 @@ export const productList = [
     slug: "red-lentils",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error.",
     image: [image12, image12, image12, image12],
+    category: "Agriculture",
   },
   {
     id: 13,
@@ -137,6 +147,7 @@ export const productList = [
     slug: "kidney-beans",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image13, image13, image13, image13],
+    category: "Agriculture",
   },
   {
     id: 14,
@@ -144,6 +155,7 @@ export const productList = [
     slug: "red-kidney-beans",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image14, image14, image14, image14],
+    category: "Agriculture",
   },
   {
     id: 15,
@@ -151,6 +163,7 @@ export const productList = [
     slug: "white-kidney-beans",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image15, image15, image15, image15],
+    category: "Agriculture",
   },
   {
     id: 16,
@@ -158,6 +171,7 @@ export const productList = [
     slug: "kabuli-chickpeas",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image16, image16, image16, image16],
+    category: "Agriculture",
   },
   {
     id: 17,
@@ -165,6 +179,7 @@ export const productList = [
     slug: "lentils",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image17, image17, image17, image17],
+    category: "Agriculture",
   },
   {
     id: 18,
@@ -172,6 +187,7 @@ export const productList = [
     slug: "raw-cashew-nuts",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image18, image18, image18, image18],
+    category: "Nuts",
   },
   {
     id: 19,
@@ -179,6 +195,7 @@ export const productList = [
     slug: "processed-cashew-nuts",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image19, image19, image19, image19],
+    category: "Nuts",
   },
   {
     id: 20,
@@ -186,6 +203,7 @@ export const productList = [
     slug: "peanuts",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image20, image20, image20, image20],
+    category: "Nuts",
   },
   {
     id: 21,
@@ -193,6 +211,7 @@ export const productList = [
     slug: "pistachio-nuts",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image21, image21, image21, image21],
+    category: "Nuts",
   },
   {
     id: 22,
@@ -200,6 +219,7 @@ export const productList = [
     slug: "almond-nuts",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image22, image22, image22, image22],
+    category: "Nuts",
   },
   {
     id: 23,
@@ -207,6 +227,7 @@ export const productList = [
     slug: "cardamom",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image23, image23, image23, image23],
+    category: "Spice",
   },
   {
     id: 24,
@@ -214,6 +235,7 @@ export const productList = [
     slug: "cloves",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image24, image24, image24, image24],
+    category: "Spice",
   },
   {
     id: 25,
@@ -221,6 +243,7 @@ export const productList = [
     slug: "black-pepper",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error.",
     image: [image25, image25, image25, image25],
+    category: "Spice",
   },
   {
     id: 26,
@@ -228,6 +251,7 @@ export const productList = [
     slug: "dry-chili",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image26, image26, image26, image26],
+    category: "Spice",
   },
   {
     id: 27,
@@ -235,6 +259,7 @@ export const productList = [
     slug: "white-pepper",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image27, image27, image27, image27],
+    category: "Spice",
   },
   {
     id: 28,
@@ -242,6 +267,7 @@ export const productList = [
     slug: "coffee-beans",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error.",
     image: [image28, image28, image28, image28],
+    category: "Coffee",
   },
   {
     id: 29,
@@ -249,6 +275,7 @@ export const productList = [
     slug: "robusta-coffee-bean",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image29, image29, image29, image29],
+    category: "Coffee",
   },
   {
     id: 30,
@@ -256,6 +283,7 @@ export const productList = [
     slug: "dates",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image30, image30, image30, image30],
+    category: "Others",
   },
   {
     id: 31,
@@ -263,6 +291,7 @@ export const productList = [
     slug: "sugar",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image31, image31, image31, image31],
+    category: "Others",
   },
   {
     id: 32,
@@ -270,54 +299,9 @@ export const productList = [
     slug: "meat",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image32, image32, image32, image32],
+    category: "Others",
   },
-  {
-    id: 33,
-    title: "Mug",
-    slug: "mug",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
-    image: [image33, image33, image33, image33],
-  },
-];
-
-export const office = [
-  {
-    title: "Singapore office",
-    address: "138 JURONG GATEWAY ROAD,Singapore 600134.",
-    cell: "+65-91517201",
-    email: "head-office@barakha-enterprise.com",
-  },
-  {
-    title: "Bangladesh Office",
-    address: "House-1, Road-5, Block-G/1 Mirpur-2, Dhaka, Bangladesh",
-    cell: "+880-1982248470",
-    email: "BD-office@barakha-enterprise.com",
-  },
-  {
-    title: "Dubai Office",
-    address: "House-122, Salah Uddin Street,Al Muteena, Deira, Dubai, UAE",
-    cell: "971-508267926",
-    email: "UAE@ barakha-enterprise.com",
-  },
-  {
-    title: "Vietnam Office",
-    address: "No 21 Street 15, Tan Hung Ward, District 7, HCM City, Vietnam",
-    cell: "+84-796765222",
-    email: "Vn@ barakha-enterprise.com",
-  },
-  {
-    title: "Tanzania Office",
-    address: "NHC House, Samora Avenue,Dar es Salaam, Tanzania",
-    cell: "+255-759178179",
-    email: "Tanzania@barakha-enterprise.com",
-  },
-  {
-    title: "Indonesia Office",
-    address:
-      "Bakrie Tower Komplek Rasuna Epicentrum Jl. H. R. Rasuna Said Karet Kuningan, SetiabudiDKI Jakarta 12940, Indonesia",
-    cell: "+62-82142841381",
-    email: "Indonesia@barakha-enterprise.com",
-  },
+  ,
 ];
 
 export const category = [
@@ -376,7 +360,46 @@ export const category = [
   },
   {
     title: "Others",
-    list: ["Dates", "Sugar", "Meat", "Mug"],
+    list: ["Dates", "Sugar", "Meat"],
     icon: <TbMeat />,
+  },
+];
+export const office = [
+  {
+    title: "Singapore office",
+    address: "138 JURONG GATEWAY ROAD,Singapore 600134.",
+    cell: "+65-91517201",
+    email: "head-office@barakha-enterprise.com",
+  },
+  {
+    title: "Bangladesh Office",
+    address: "House-1, Road-5, Block-G/1 Mirpur-2, Dhaka, Bangladesh",
+    cell: "+880-1982248470",
+    email: "BD-office@barakha-enterprise.com",
+  },
+  {
+    title: "Dubai Office",
+    address: "House-122, Salah Uddin Street,Al Muteena, Deira, Dubai, UAE",
+    cell: "971-508267926",
+    email: "UAE@ barakha-enterprise.com",
+  },
+  {
+    title: "Vietnam Office",
+    address: "No 21 Street 15, Tan Hung Ward, District 7, HCM City, Vietnam",
+    cell: "+84-796765222",
+    email: "Vn@ barakha-enterprise.com",
+  },
+  {
+    title: "Tanzania Office",
+    address: "NHC House, Samora Avenue,Dar es Salaam, Tanzania",
+    cell: "+255-759178179",
+    email: "Tanzania@barakha-enterprise.com",
+  },
+  {
+    title: "Indonesia Office",
+    address:
+      "Bakrie Tower Komplek Rasuna Epicentrum Jl. H. R. Rasuna Said Karet Kuningan, SetiabudiDKI Jakarta 12940, Indonesia",
+    cell: "+62-82142841381",
+    email: "Indonesia@barakha-enterprise.com",
   },
 ];
