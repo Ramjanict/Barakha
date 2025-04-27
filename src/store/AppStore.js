@@ -6,32 +6,26 @@ export const products = create()((set, get) => ({
   selectedCategory: null,
   selectedTitle: null,
 
+  handleSelectCategory: (category) => {
+    set({ selectedCategory: category, selectedTitle: null });
+  },
+
   handleSelectTitle: (title) => {
     set({ selectedTitle: title });
   },
 
-  handleSelectCategory: (category) => {
-    set({ selectedCategory: category });
-  },
-
-  filterTitleBased: () => {
-    const data = get().data;
-    const selectedTitle = get().selectedTitle;
-    if (data && selectedTitle) {
-      return data.filter((product) =>
-        product.title?.toLowerCase()===(selectedTitle?.toLowerCase())
-      );
-    }
-  },
-  filterCategoryBased: () => {
+  filterProducts: () => {
     const data = get().data;
     const selectedCategory = get().selectedCategory;
+    const selectedTitle = get().selectedTitle;
     if (data) {
-      return data.filter((product) =>
-        product.category
-          ?.toLowerCase()
-          ===(selectedCategory?.toLowerCase())
-      );
+      return data
+        .filter((product) =>
+          selectedCategory ? product.category === selectedCategory : true
+        )
+        .filter((product) =>
+          product.title.toLowerCase().includes(selectedTitle?.toLowerCase())
+        );
     }
   },
 }));

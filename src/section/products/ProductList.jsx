@@ -4,16 +4,10 @@ import Card from "@/components/Card";
 import { products } from "@/store/AppStore";
 
 const ProductList = ({ setSidebar, sidebar }) => {
-  const { data, filterTitleBased, filterCategoryBased } = products();
+  const { data, filterProducts } = products();
 
-  const productWithTitle = filterTitleBased();
-  const productWithCategory = filterCategoryBased();
+  const filteredProducts = filterProducts();
 
-  const filteredProducts =
-    productWithCategory.length > 0 ? productWithCategory : productWithTitle;
-
-  console.log("selectedTitle", productWithTitle);
-  console.log("filterCategoryBased", productWithCategory);
   return (
     <div className="flex-1 ">
       <div>

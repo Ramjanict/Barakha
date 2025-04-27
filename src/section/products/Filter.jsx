@@ -26,7 +26,12 @@ const Filter = ({ sidebar, setSidebar }) => {
           <div key={i}>
             <div onClick={() => handleClick(i)}>
               <div className="flex items-center justify-between cursor-pointer transition-all hover:bg-[#F4F4F5] p-1 rounded-md">
-                <div className="flex items-center gap-1">
+                <div
+                  onClick={() => {
+                    handleSelectCategory(item.title);
+                  }}
+                  className="flex items-center gap-1"
+                >
                   <div
                     onClick={() => {
                       setSidebar((pre) => !pre);
@@ -35,10 +40,7 @@ const Filter = ({ sidebar, setSidebar }) => {
                   >
                     {item.icon}
                   </div>
-                  <span
-                    onClick={() => handleSelectCategory(item.title)}
-                    className={`${sidebar && "transition-all hidden"}`}
-                  >
+                  <span className={`${sidebar && "transition-all hidden"}`}>
                     {item.title}
                   </span>
                 </div>
