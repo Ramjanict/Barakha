@@ -5,7 +5,7 @@ import Dropdown from "./Dropdown";
 import { products } from "@/store/AppStore";
 
 const Filter = ({ sidebar, setSidebar }) => {
-  const { handleSelectCategory } = products();
+  const { handleSelectCategory, selectedCategory } = products();
   const [isRotated, setIsRotated] = useState({});
 
   const handleClick = (index) => {
@@ -30,7 +30,11 @@ const Filter = ({ sidebar, setSidebar }) => {
                 handleClick(i);
               }}
             >
-              <div className="flex items-center justify-between cursor-pointer transition-all hover:bg-[#F4F4F5] p-1 rounded-md">
+              <div
+                className={`flex items-center justify-between cursor-pointer transition-all hover:bg-[#F4F4F5] p-1 rounded-md ${
+                  selectedCategory === item.title && "bg-[#F4F4F5]"
+                }`}
+              >
                 <div className="flex items-center gap-1">
                   <div
                     onClick={() => {

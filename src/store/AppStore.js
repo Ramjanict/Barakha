@@ -11,26 +11,27 @@ export const products = create()((set, get) => ({
   },
 
   handleSelectTitle: (title) => {
-    set({ selectedTitle: title });
+    set({ selectedTitle: title, selectedCategory: null });
   },
 
   filterProducts: () => {
     const data = get().data;
     const selectedCategory = get().selectedCategory;
     const selectedTitle = get().selectedTitle;
-  
+
     let filteredData = data;
-    if (selectedCategory&&!selectedTitle) {
+    if (selectedCategory && !selectedTitle) {
       filteredData = filteredData.filter(
-        (product) =>(product.category)?.toLowerCase() === selectedCategory?.toLowerCase()
+        (product) =>
+          product.category?.toLowerCase() === selectedCategory?.toLowerCase()
       );
     }
-    if (selectedTitle) {
+    if (selectedTitle && !selectedCategory) {
       filteredData = filteredData.filter(
-        (product) => (product.title)?.toLowerCase() === selectedTitle?.toLowerCase()
+        (product) =>
+          product.title?.toLowerCase() === selectedTitle?.toLowerCase()
       );
     }
     return filteredData;
   },
-  
 }));

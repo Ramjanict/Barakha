@@ -1,19 +1,25 @@
 import { products } from "@/store/AppStore";
 
 const Dropdown = ({ list }) => {
-  const { handleSelectTitle } = products();
+  const { handleSelectTitle, selectedTitle } = products();
   return (
-    <div className="p-2 ml-4 border-l border-gray-200 ">
+    <div className="ml-4 border-l border-gray-200 ">
       {list.map((list, i) => (
-        <p
+        <div
           key={i}
-          className="cursor-pointer transition-all  hover:bg-[#F4F4F5] py-1 px-2 rounded-md "
+          className={`cursor-pointer transition-all  hover:bg-[#F4F4F5]  rounded-md `}
           onClick={() => {
             handleSelectTitle(list);
           }}
         >
-          {list}
-        </p>
+          <p
+            className={`py-1 px-2  rounded-md ${
+              selectedTitle === list && "bg-[#F4F4F5]"
+            }`}
+          >
+            {list}
+          </p>
+        </div>
       ))}
     </div>
   );
