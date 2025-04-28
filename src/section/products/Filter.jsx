@@ -24,14 +24,14 @@ const Filter = ({ sidebar, setSidebar }) => {
       <div className={`flex flex-col ${sidebar && "items-center"} gap-2 p-2`}>
         {category.map((item, i) => (
           <div key={i}>
-            <div onClick={() => handleClick(i)}>
+            <div
+              onClick={() => {
+                handleSelectCategory(item.title);
+                handleClick(i);
+              }}
+            >
               <div className="flex items-center justify-between cursor-pointer transition-all hover:bg-[#F4F4F5] p-1 rounded-md">
-                <div
-                  onClick={() => {
-                    handleSelectCategory(item.title);
-                  }}
-                  className="flex items-center gap-1"
-                >
+                <div className="flex items-center gap-1">
                   <div
                     onClick={() => {
                       setSidebar((pre) => !pre);

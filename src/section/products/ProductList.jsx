@@ -4,9 +4,12 @@ import Card from "@/components/Card";
 import { products } from "@/store/AppStore";
 
 const ProductList = ({ setSidebar, sidebar }) => {
-  const { data, filterProducts } = products();
+  const { data, selectedCategory, selectedTitle, filterProducts } = products();
 
   const filteredProducts = filterProducts();
+  console.log("tamselectedCategoryjana", selectedCategory);
+  console.log("selectedTitle", selectedTitle);
+  console.log("filterProducts", filterProducts());
 
   return (
     <div className="flex-1 ">

@@ -80,7 +80,7 @@ export const productList = [
   },
   {
     id: 5,
-    title: "Palm Oil",
+    title: "Plam Oil",
     slug: "palm-oil",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image5, image5, image5, image5],
@@ -343,7 +343,7 @@ export const category = [
       "Raw Cashew Nuts",
       "Processed Cashew Nuts",
       "Peanuts",
-      "Pistachio Nnuts.",
+      "Pistachio Nuts",
       "Almond Nuts",
     ],
     icon: <GiCoconuts />,

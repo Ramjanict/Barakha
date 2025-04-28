@@ -18,14 +18,19 @@ export const products = create()((set, get) => ({
     const data = get().data;
     const selectedCategory = get().selectedCategory;
     const selectedTitle = get().selectedTitle;
-    if (data) {
-      return data
-        .filter((product) =>
-          selectedCategory ? product.category === selectedCategory : true
-        )
-        .filter((product) =>
-          product.title.toLowerCase().includes(selectedTitle?.toLowerCase())
-        );
+  
+    let filteredData = data;
+    if (selectedCategory&&!selectedTitle) {
+      filteredData = filteredData.filter(
+        (product) =>(product.category)?.toLowerCase() === selectedCategory?.toLowerCase()
+      );
     }
+    if (selectedTitle) {
+      filteredData = filteredData.filter(
+        (product) => (product.title)?.toLowerCase() === selectedTitle?.toLowerCase()
+      );
+    }
+    return filteredData;
   },
+  
 }));
