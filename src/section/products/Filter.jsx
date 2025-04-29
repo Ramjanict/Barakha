@@ -17,11 +17,15 @@ const Filter = ({ sidebar, setSidebar }) => {
 
   return (
     <div
-      className={`transition-all duration-500 ${
+      className={`transition-all duration-500 hidden sm:block ${
         sidebar ? "w-fit" : "w-60"
       } bg-[#FAFAFA] shadow-[0px_0px_1px_1px_rgba(0,0,0,0.05)] rounded-md`}
     >
-      <div className={`flex flex-col ${sidebar && "items-center"} gap-2 p-2`}>
+      <div
+        className={`w-full flex flex-col ${
+          sidebar && "items-center"
+        } gap-2 p-2`}
+      >
         {category.map((item, i) => (
           <div key={i}>
             <div
