@@ -17,7 +17,6 @@ const ProductImage = ({
       />
 
       {zoomImage && (
-        // hidden lg:block absolute min-w-[500px] min-h-[400px] bg-slate-200 p-1 top-0 -right-[510px] overflow-hidden
         <div className="  rounded-lg  absolute  w-[300px] h-[300px] lg:w-96 lg:h-96 bg-gray-50 p-1 top-0 -right-[410px]  overflow-hidden">
           <div
             className="object-scale-down w-full h-full scale-125 mix-blend-multiply"
