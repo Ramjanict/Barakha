@@ -38,10 +38,13 @@ const BarakaPagination = ({
   };
 
   return (
-    <Pagination className="py-4">
+    <Pagination className="py-10">
       <PaginationContent>
         <PaginationItem>
-          <PaginationPrevious onClick={handleLeft} />
+          <PaginationPrevious
+            className="cursor-pointer "
+            onClick={handleLeft}
+          />
         </PaginationItem>
 
         {pages.map((page) => {
@@ -54,6 +57,7 @@ const BarakaPagination = ({
             return (
               <PaginationItem key={page}>
                 <PaginationLink
+                  className="cursor-pointer "
                   isActive={page === currentPage}
                   onClick={() => handlePageClick(page)}
                 >
@@ -67,7 +71,7 @@ const BarakaPagination = ({
           ) {
             return (
               <PaginationItem key={`ellipsis-${page}`}>
-                <PaginationEllipsis />
+                <PaginationEllipsis className="cursor-pointer " />
               </PaginationItem>
             );
           }
@@ -75,7 +79,7 @@ const BarakaPagination = ({
         })}
 
         <PaginationItem>
-          <PaginationNext onClick={handleRight} />
+          <PaginationNext className="cursor-pointer " onClick={handleRight} />
         </PaginationItem>
       </PaginationContent>
     </Pagination>
