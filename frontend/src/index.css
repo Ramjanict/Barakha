@@ -4,6 +4,10 @@
 
 @layer base {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  @layer base {
+    @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+  }
+ 
   :root {
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -25,9 +29,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
-@layer base {
-  @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
-}
+
 
 @layer base {
   :root {

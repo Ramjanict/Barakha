@@ -41,6 +41,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -109,12 +110,36 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+:root {
+  --color-primary: #44AA00; /* or oklch if you're using that */
+}
+
+
+@theme inline {
+  --font-poppin: "Poppins", serif;
+  --font-geist: "Geist", serif;
+  --color-primary: #44AA00;
+  --color-secondary: #F9F9F9;
+  --color-text: #888888;
+
+
+    --color-primary: var(--color-primary);
+    --color-secondary: var(--color-secondary);
+    --color-text: var(--color-text);
+  
+}
+
+
 
 @layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+    font-family:var(--font-poppin)
   }
 }

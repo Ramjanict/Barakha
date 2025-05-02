@@ -15,6 +15,7 @@ import Products from "./Products";
 import Sales from "./Sales";
 import Office from "./Office";
 import DasHeader from "../sections/Dashboard/DasHeader";
+import Sidebar from "../components/Sidebar";
 
 export const category = [
   {
@@ -162,31 +163,37 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <DasHeader />
-      <div className="container p-4 mx-auto">
-        <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
-        <Overview
-          activeTab={activeTab}
-          productList={productList}
-          category={category}
-          office={office}
-          categoryData={categoryData}
-          COLORS={COLORS}
-          salesData={salesData}
-          topProducts={topProducts}
-        />
-        <Products
-          activeTab={activeTab}
-          category={category}
-          filteredProducts={filteredProducts}
-          setSelectedCategory={setSelectedCategory}
-        />
-        <Sales
-          activeTab={activeTab}
-          categoryData={categoryData}
-          inventoryData={inventoryData}
-          salesData={salesData}
-        />
-        <Office activeTab={activeTab} office={office} />
+
+      <div className="flex gap-10">
+        <div className="w-60">
+          <Sidebar />
+        </div>
+        <div className="flex-1 ">
+          <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
+          <Overview
+            activeTab={activeTab}
+            productList={productList}
+            category={category}
+            office={office}
+            categoryData={categoryData}
+            COLORS={COLORS}
+            salesData={salesData}
+            topProducts={topProducts}
+          />
+          <Products
+            activeTab={activeTab}
+            category={category}
+            filteredProducts={filteredProducts}
+            setSelectedCategory={setSelectedCategory}
+          />
+          <Sales
+            activeTab={activeTab}
+            categoryData={categoryData}
+            inventoryData={inventoryData}
+            salesData={salesData}
+          />
+          <Office activeTab={activeTab} office={office} />
+        </div>
       </div>
     </div>
   );
