@@ -9,7 +9,6 @@ import Wishlist from "./pages/Wishlist";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Inquire from "./pages/Inquire";
-import AppSidebar from "./pages/AppSidebar ";
 import ProductDetails from "./pages/ProductDetails";
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetails />} />
 
-        <Route path="/career" element={<AppSidebar />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/inquire-now" element={<Inquire />} />
         <Route path="/wishlist" element={<Wishlist />} />

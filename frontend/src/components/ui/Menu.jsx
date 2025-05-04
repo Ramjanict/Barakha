@@ -8,7 +8,7 @@ export const navbarlists = [
   { label: "Career", link: "/career" },
   { label: "Contact", link: "/contact" },
   { label: "Inquire now ", link: "/inqure" },
-  { label: "Wishlist", link: "/wishlist" },
+  // { label: "Wishlist", link: "/wishlist" },
 ];
 
 const Menu = () => {
@@ -20,6 +20,9 @@ const Menu = () => {
             {item.label}
           </NavLink>
         ))}
+        <a target="_blank" href="https://barakha-admin.vercel.app/">
+          Admin
+        </a>
         <Searchbar />
       </div>
     </>
