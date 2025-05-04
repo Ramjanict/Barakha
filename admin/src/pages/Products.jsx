@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import BarakaPagination from "../components/BarakaPagination";
 
 const Products = ({
   activeTab,
@@ -6,6 +7,13 @@ const Products = ({
   filteredProducts,
   setSelectedCategory,
 }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const postPerPage = 8;
+  const lastPostIndex = currentPage * postPerPage;
+  const firstPostIndex = lastPostIndex - postPerPage;
+  const totalPost = filteredProducts.length;
+  const ProductData = filteredProducts.slice(firstPostIndex, lastPostIndex);
+
   return (
     <div>
       {activeTab === "products" && (
@@ -73,6 +81,12 @@ const Products = ({
           </div>
         </div>
       )}
+      <BarakaPagination
+        postPerPage={postPerPage}
+        totalPost={totalPost}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
     </div>
   );
 };

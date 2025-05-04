@@ -61,7 +61,7 @@ const Dashboard = () => {
         <div className="w-60">
           <Sidebar />
         </div>
-        <div className="flex-1 ">
+        <div className="flex-1 p-2">
           <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
           <Overview
             activeTab={activeTab}
