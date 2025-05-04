@@ -9,8 +9,13 @@ const ProductList = ({ setSidebar, sidebar }) => {
   const { filterProducts } = products();
   const filteredProducts = filterProducts();
   const [card, setCard] = useState("grid");
+  const [currentPage, setCurrentPage] = useState(1);
+  const postPerPage = 8;
+  const lastPostIndex = currentPage * postPerPage;
+  const firstPostIndex = lastPostIndex - postPerPage;
+  const totalPost = filteredProducts.length;
+  const ProductData = filteredProducts.slice(firstPostIndex, lastPostIndex);
 
-  console.log("ramjan", card);
   return (
     <div className="flex-1 w-ful ">
       <Sort sidebar={sidebar} setSidebar={setSidebar} setCard={setCard} />
@@ -22,14 +27,19 @@ const ProductList = ({ setSidebar, sidebar }) => {
         }`}
       >
         {card === "grid"
-          ? filteredProducts?.map((item, i) => (
+          ? ProductData?.map((item, i) => (
               <Card product={item} key={i} id={item.id} />
             ))
-          : filteredProducts?.map((item, i) => (
+          : ProductData?.map((item, i) => (
               <ListCard product={item} key={i} id={item.id} />
             ))}
       </div>
-      <BarakaPagination />
+      <BarakaPagination
+        postPerPage={postPerPage}
+        totalPost={totalPost}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
     </div>
   );
 };

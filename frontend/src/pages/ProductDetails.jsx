@@ -15,12 +15,10 @@ const ProductDetails = () => {
   const product = useMemo(() => {
     return data?.find((item) => item.id === Number(id));
   }, [id]);
-  const Relatedproduct = useMemo(() => {
+  const relatedProduct = useMemo(() => {
     return data?.filter((item) => item.id !== Number(id));
   }, [id]);
 
-  console.log("product", product);
-  console.log("Relatedproduct", Relatedproduct);
   if (!product) {
     return (
       <CommonContainer>
@@ -81,7 +79,7 @@ const ProductDetails = () => {
         </div>
       </div>
       <div>
-        <RelatedProduct Relatedproduct={Relatedproduct} />
+        <RelatedProduct relatedProduct={relatedProduct} />
       </div>
     </CommonContainer>
   );

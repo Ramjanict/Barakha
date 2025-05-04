@@ -8,11 +8,11 @@ const ListCard = ({ product, id }) => {
     <Link
       onClick={ScrollTop}
       to={`/products/${id}`}
-      className="w-full shadow-[0_0_1px_1px_rgba(0,0,0,.05)] font-geist flex   gap-10 relative cursor-pointer group  hover:translate-y-[-8px] transition-all duration-500 hover:shadow-[-2px_2px_5px_rgba(0,0,0,.5)]  p-4"
+      className="w-full rounded-2xl  shadow-[0_0_1px_1px_rgba(0,0,0,.05)] font-geist flex   gap-10 relative cursor-pointer group  hover:translate-y-[-8px] transition-all duration-500 hover:shadow-[-2px_2px_5px_rgba(0,0,0,.5)]  p-4"
     >
-      <div className="max-w-[400px] max-h-[400px]">
+      <div className=" max-w-[200px] max-h-[200px]">
         <img
-          className="object-scale-down w-full h-full "
+          className="w-full h-full "
           src={product?.image[0]}
           alt="product-image"
         />
@@ -27,7 +27,7 @@ const ListCard = ({ product, id }) => {
         <div>{product.des}</div>
       </div>
 
-      <div className="w-full h-full bg-[#26262666] absolute top-0 left-0 invisible group-hover:visible transition-all "></div>
+      <div className="w-full h-full bg-[#26262666] absolute top-0 left-0 invisible group-hover:visible transition-all rounded-2xl  "></div>
     </Link>
   );
 };
