@@ -1,4 +1,4 @@
-import logo from "../../assets/footerlogo.png";
+import logo from "../../assets/images/footerlogo.png";
 const DasHeader = () => {
   return (
     <header className="flex items-center justify-between w-full p-4 bg-[#1C2431] text-white ">
