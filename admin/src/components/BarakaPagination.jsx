@@ -21,8 +21,6 @@ const BarakaPagination = ({
     pages.push(i);
   }
 
-  console.log("pages", pages);
-
   const handleLeft = () => {
     if (currentPage > 1) {
       setCurrentPage((prev) => prev - 1);

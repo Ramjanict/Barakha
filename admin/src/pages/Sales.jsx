@@ -73,6 +73,14 @@ const Sales = ({ activeTab, categoryData, salesData, inventoryData }) => {
           </div>
         </div>
       )}
+      {/* {activeTab === "sales" && (
+        <BarakaPagination
+          postPerPage={postPerPage}
+          totalPost={totalPost}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+      )} */}
     </div>
   );
 };

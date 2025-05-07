@@ -81,12 +81,14 @@ const Products = ({
           </div>
         </div>
       )}
-      <BarakaPagination
-        postPerPage={postPerPage}
-        totalPost={totalPost}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
+      {activeTab === "products" && (
+        <BarakaPagination
+          postPerPage={postPerPage}
+          totalPost={totalPost}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+      )}
     </div>
   );
 };

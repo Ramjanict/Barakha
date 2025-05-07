@@ -13,6 +13,10 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import BarakaPagination from "../components/BarakaPagination";
+import { RiDeleteBin5Line } from "react-icons/ri";
+import { RiDeleteBin5Fill } from "react-icons/ri";
+
 const Overview = ({
   activeTab,
   productList,
@@ -20,7 +24,6 @@ const Overview = ({
   office,
   categoryData,
   COLORS,
-  salesData,
   topProducts,
 }) => {
   return (
@@ -55,7 +58,6 @@ const Overview = ({
             </p>
           </div>
 
-          {/* Category Distribution */}
           <div className="p-6 bg-white rounded-lg shadow-sm md:col-span-2">
             <h3 className="mb-4 text-lg font-semibold text-gray-700">
               Product Categories
@@ -88,52 +90,27 @@ const Overview = ({
             </div>
           </div>
 
-          {/* Sales Trend */}
-          <div className="p-6 bg-white rounded-lg shadow-sm md:col-span-3">
-            <h3 className="mb-4 text-lg font-semibold text-gray-700">
-              Sales Trend
-            </h3>
-            <div className="h-64">
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={salesData}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="name" />
-                  <YAxis />
-                  <Tooltip />
-                  <Legend />
-                  <Line
-                    type="monotone"
-                    dataKey="sales"
-                    stroke="#8884d8"
-                    activeDot={{ r: 8 }}
-                  />
-                </LineChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
-
-          {/* Top Products */}
           <div className="p-6 bg-white rounded-lg shadow-sm md:col-span-3">
             <h3 className="mb-4 text-lg font-semibold text-gray-700">
               Top Selling Products
             </h3>
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
+                <thead className="bg-gra">
                   <tr>
-                    <th className="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
+                    <th className="px-6 py-3 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">
                       Product
                     </th>
-                    <th className="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
+                    <th className="px-6 py-3 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">
                       Category
                     </th>
-                    <th className="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
+                    <th className="px-6 py-3 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">
                       Sales
                     </th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                  {topProducts.map((product) => (
+                  {productList.map((product) => (
                     <tr key={product.id}>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
@@ -157,8 +134,8 @@ const Overview = ({
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <span className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
-                          ${product.sales.toLocaleString()}
+                        <span className="text-2xl cursor-pointer ">
+                          <RiDeleteBin5Fill />
                         </span>
                       </td>
                     </tr>
@@ -169,6 +146,14 @@ const Overview = ({
           </div>
         </div>
       )}
+      {/* {activeTab === "overview" && (
+        <BarakaPagination
+          postPerPage={postPerPage}
+          totalPost={totalPost}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+      )} */}
     </div>
   );
 };

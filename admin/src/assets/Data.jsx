@@ -68,7 +68,7 @@ export const productList = [
     slug: "sunflower-oil",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image3, image9, image6, image3],
-    category: "oil",
+    category: "Oil",
   },
   {
     id: 4,
@@ -76,7 +76,7 @@ export const productList = [
     slug: "soya-bean-oil",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image4, image10, image4, image5],
-    category: "oil",
+    category: "Oil",
   },
   {
     id: 5,
@@ -84,6 +84,7 @@ export const productList = [
     slug: "palm-oil",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image5, image5, image5, image5],
+    category: "Oil",
   },
   {
     id: 6,
@@ -91,7 +92,7 @@ export const productList = [
     slug: "coconut-oil",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image6, image18, image17, image6],
-    category: "oil",
+    category: "Oil",
   },
   {
     id: 7,
@@ -99,7 +100,7 @@ export const productList = [
     slug: "soya-bean",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi ullam consequuntur laborum suscipit quisquam nostrum quis.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis veritatis corrupti voluptates qui natus facere, excepturi saepe doloribus dolore impedit optio consequatur quaerat quia deleniti nemo voluptatibus nisi dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita hic delectus nobis cumque adipisci placeat eum? Reprehenderit, laudantium rem! Doloribus molestiae dolore rem ipsum, quos aperiam odit? Quam, fuga ,error",
     image: [image7, image7, image7, image7],
-    category: "oil",
+    category: "Oil",
   },
   {
     id: 8,

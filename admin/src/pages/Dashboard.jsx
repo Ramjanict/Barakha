@@ -45,6 +45,8 @@ const Dashboard = () => {
     }))
     .slice(0, 10);
 
+  console.log("activeTab", activeTab);
+
   const topProducts = [...productList]
     .sort(() => 0.5 - Math.random())
     .slice(0, 5)
@@ -57,12 +59,11 @@ const Dashboard = () => {
     <div className="min-h-screen bg-gray-100">
       <DasHeader />
 
-      <div className="flex gap-10">
+      <div className="flex ">
         <div className="w-60">
-          <Sidebar />
+          <Sidebar setActiveTab={setActiveTab} />
         </div>
-        <div className="flex-1 p-2">
-          <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
+        <div className="flex-1 p-6">
           <Overview
             activeTab={activeTab}
             productList={productList}
@@ -70,7 +71,6 @@ const Dashboard = () => {
             office={office}
             categoryData={categoryData}
             COLORS={COLORS}
-            salesData={salesData}
             topProducts={topProducts}
           />
           <Products
