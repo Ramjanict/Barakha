@@ -14,7 +14,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import BarakaPagination from "../components/BarakaPagination";
-import { RiDeleteBin5Line } from "react-icons/ri";
+import { FaRegEdit } from "react-icons/fa";
+
 import { RiDeleteBin5Fill } from "react-icons/ri";
 
 const Overview = ({
@@ -24,7 +25,6 @@ const Overview = ({
   office,
   categoryData,
   COLORS,
-  topProducts,
 }) => {
   return (
     <div>
@@ -92,7 +92,7 @@ const Overview = ({
 
           <div className="p-6 bg-white rounded-lg shadow-sm md:col-span-3">
             <h3 className="mb-4 text-lg font-semibold text-gray-700">
-              Top Selling Products
+              Total Products
             </h3>
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
@@ -105,7 +105,10 @@ const Overview = ({
                       Category
                     </th>
                     <th className="px-6 py-3 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">
-                      Sales
+                      update
+                    </th>
+                    <th className="px-6 py-3 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">
+                      delete
                     </th>
                   </tr>
                 </thead>
@@ -135,6 +138,11 @@ const Overview = ({
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <span className="text-2xl cursor-pointer ">
+                          <FaRegEdit />
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <span className="text-2xl cursor-pointer ">
                           <RiDeleteBin5Fill />
                         </span>
                       </td>
@@ -146,14 +154,6 @@ const Overview = ({
           </div>
         </div>
       )}
-      {/* {activeTab === "overview" && (
-        <BarakaPagination
-          postPerPage={postPerPage}
-          totalPost={totalPost}
-          currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
-        />
-      )} */}
     </div>
   );
 };

@@ -45,25 +45,17 @@ const Dashboard = () => {
     }))
     .slice(0, 10);
 
-  console.log("activeTab", activeTab);
-
-  const topProducts = [...productList]
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 5)
-    .map((p) => ({ ...p, sales: Math.floor(Math.random() * 10000) + 1000 }));
-
   const filteredProducts = selectedCategory
     ? productList.filter((p) => p.category === selectedCategory)
     : productList;
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="">
       <DasHeader />
-
-      <div className="flex ">
-        <div className="w-60">
+      <div className="flex max-h-[calc(100vh-80px)] ">
+        <div className="h-full w-60">
           <Sidebar setActiveTab={setActiveTab} />
         </div>
-        <div className="flex-1 p-6">
+        <div className="flex-1 h-full p-6">
           <Overview
             activeTab={activeTab}
             productList={productList}
@@ -71,7 +63,6 @@ const Dashboard = () => {
             office={office}
             categoryData={categoryData}
             COLORS={COLORS}
-            topProducts={topProducts}
           />
           <Products
             activeTab={activeTab}

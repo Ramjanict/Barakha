@@ -14,10 +14,11 @@ const sidebarMenu = [
 
 const Sidebar = ({ setActiveTab }) => {
   return (
-    <div className="flex flex-col h-screen py-2 bg-white w-60">
+    <div className="flex flex-col h-screen py-2 bg-white shadow w-60">
       <nav className="flex flex-col gap-4 ">
         {sidebarMenu.map((item, i) => (
           <div
+            key={item.label}
             onClick={() => setActiveTab(item.label)}
             className="flex items-center gap-1 px-4 py-1 cursor-pointer hover:bg-gray-50"
           >

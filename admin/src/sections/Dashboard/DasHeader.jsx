@@ -1,9 +1,9 @@
 import logo from "../../assets/images/footerlogo.png";
 const DasHeader = () => {
   return (
-    <header className="flex items-center justify-between w-full p-4 bg-[#1C2431] text-white ">
+    <header className="flex items-center justify-between w-full h-20 bg-[#1C2431] text-white px-4 ">
       <div>
-        <img className=" max-w-40" src={logo} alt="logo" />
+        <img className=" max-w-20" src={logo} alt="logo" />
         <h1 className="text-lg font-bold ">Barakha Enterprise Dashboard</h1>
       </div>
 

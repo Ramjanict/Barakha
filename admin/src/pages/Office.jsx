@@ -4,7 +4,7 @@ const Office = ({ activeTab, office }) => {
   return (
     <div>
       {activeTab === "offices" && (
-        <div className="p-6 bg-white rounded-lg shadow-sm">
+        <div className="p-6 ">
           <h2 className="mb-6 text-xl font-semibold text-gray-800">
             Global Offices
           </h2>
