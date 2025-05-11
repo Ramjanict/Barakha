@@ -305,7 +305,7 @@ export const productList = [
   ,
 ];
 
-export const category = [
+export const categories = [
   {
     title: "Metal & Minerals",
     list: ["Copper Cathode", "Thermal Coal"],
@@ -365,6 +365,7 @@ export const category = [
     icon: <TbMeat />,
   },
 ];
+
 export const office = [
   {
     title: "Singapore office",

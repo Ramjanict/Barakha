@@ -9,6 +9,7 @@ const sidebarMenu = [
   { label: "sales", path: "/", icon: IoStatsChart },
   { label: "products", path: "/", icon: LuBoxes },
   { label: "offices", path: "/", icon: RiBuilding2Line },
+  { label: "test", path: "/", icon: RiBuilding2Line },
   { label: "logout", path: "/", icon: MdLogout },
 ];
 

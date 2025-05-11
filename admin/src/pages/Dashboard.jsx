@@ -9,6 +9,7 @@ import Office from "./Office";
 import DasHeader from "../sections/Dashboard/DasHeader";
 import Sidebar from "../components/Sidebar";
 import { useState } from "react";
+import AdminLoginForm from "../components/AdminLoginForm";
 
 const COLORS = [
   "#0088FE",
@@ -77,6 +78,7 @@ const Dashboard = () => {
             salesData={salesData}
           />
           <Office activeTab={activeTab} office={office} />
+          <AdminLoginForm activeTab={activeTab} />
         </div>
       </div>
     </div>
