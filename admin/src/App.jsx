@@ -1,11 +1,11 @@
 import React from "react";
-import Dashboard from "./pages/Dashboard";
+import AdminDashboard from "./pages/AdminDashboard";
 
 const App = () => {
   return (
-    <div>
-      <Dashboard />
-    </div>
+    <>
+      <AdminDashboard />
+    </>
   );
 };
 
