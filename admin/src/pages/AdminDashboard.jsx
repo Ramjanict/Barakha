@@ -15,76 +15,57 @@ import {
   Settings,
   ShieldAlert,
 } from "lucide-react";
-// import { LineChart } from "./components/line-chart"
-// import { BarChartComponent } from "./components/bar-chart";
-// import { CalendarView } from "./components/calendar-view";
-// import { RecentActivity } from "./components/recent-activity";
-// import { ProductTable } from "./components/product-table";
-// import { CategoryOverview } from "./components/category-overview";
+import logo from "../assets/images/logofinal.png";
 import { LineChart } from "../components/LineChart";
 import { BarChartComponent } from "../components/BarChartComponent";
 import { RecentActivity } from "../components/RecentActivity";
 import { ProductTable } from "../components/ProductTable";
 import { CategoryOverview } from "../components/CategoryOverview";
 import { CalendarView } from "../components/CalendarView";
+import { useState } from "react";
+import { FiSearch } from "react-icons/fi";
+import { FaRegBell } from "react-icons/fa6";
 
-export default function AdminDashboard() {
+const sidebarList = [
+  { label: "Dashboard", icon: <LayoutDashboard /> },
+  { label: "Venue Management", icon: <Building2 /> },
+  { label: "Booking & Payments", icon: <BookOpen /> },
+  { label: "Reports & Analytics", icon: <PieChart /> },
+  { label: "Dispute & Refunds", icon: <ShieldAlert /> },
+  { label: "Products", icon: <Package /> },
+  { label: "Platform Settings", icon: <Settings /> },
+];
+
+const AdminDashboard = () => {
+  const [active, setActive] = useState("Dashboard");
+
   return (
     <div className="flex h-screen bg-[#fafafa]">
       {/* Sidebar */}
-      <div className="w-[215px] bg-white border-r border-[#e4e4e4] flex flex-col">
+      <div className="w-[240px] bg-white border-r border-[#e4e4e4] flex flex-col">
         <div className="p-6">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-md bg-[#003366] flex items-center justify-center">
-              <img
-                src="/placeholder.svg?height=32&width=32"
-                width={32}
-                height={32}
-                alt="Bilinqo Logo"
-                className="w-6 h-6"
-              />
-            </div>
-            <span className="text-[#003366] font-bold text-xl">Bilinqo</span>
+          <div className=" max-w-34">
+            <img src={logo} className="" />
           </div>
         </div>
 
-        <div className="mt-4 px-4 text-sm text-[#797979]">Menu</div>
-
+        {/* <div className="mt-4 px-4 text-sm text-[#797979]">Menu</div> */}
         <nav className="flex-1 px-3 mt-2 space-y-1">
-          <button className="w-full flex items-center gap-3 px-3 py-2 text-white bg-[#003366] rounded-md">
-            <LayoutDashboard className="w-5 h-5" />
-            <span>Dashboard</span>
-          </button>
-
-          <button className="w-full flex items-center gap-3 px-3 py-2 text-[#333333] hover:bg-[#f4f4f4] rounded-md">
-            <Building2 className="w-5 h-5" />
-            <span>Venue Management</span>
-          </button>
-
-          <button className="w-full flex items-center gap-3 px-3 py-2 text-[#333333] hover:bg-[#f4f4f4] rounded-md">
-            <BookOpen className="w-5 h-5" />
-            <span>Booking & Payments</span>
-          </button>
-
-          <button className="w-full flex items-center gap-3 px-3 py-2 text-[#333333] hover:bg-[#f4f4f4] rounded-md">
-            <PieChart className="w-5 h-5" />
-            <span>Reports & Analytics</span>
-          </button>
-
-          <button className="w-full flex items-center gap-3 px-3 py-2 text-[#333333] hover:bg-[#f4f4f4] rounded-md">
-            <ShieldAlert className="w-5 h-5" />
-            <span>Dispute & Refunds</span>
-          </button>
-
-          <button className="w-full flex items-center gap-3 px-3 py-2 text-[#333333] hover:bg-[#f4f4f4] rounded-md">
-            <Package className="w-5 h-5" />
-            <span>Products</span>
-          </button>
-
-          <button className="w-full flex items-center gap-3 px-3 py-2 text-[#333333] hover:bg-[#f4f4f4] rounded-md">
-            <Settings className="w-5 h-5" />
-            <span>Platform Settings</span>
-          </button>
+          {sidebarList.map((item) => (
+            <button
+              key={item.label}
+              onClick={() => setActive(item.label)}
+              className={`w-full flex items-center gap-3 px-3 py-2 rounded-md cursor-pointer
+            ${
+              active === item.label
+                ? "  font-semibold bg-[#003366] text-white"
+                : " bg-white text-[#003366] "
+            }`}
+            >
+              <span>{item.icon}</span>
+              <span>{item.label}</span>
+            </button>
+          ))}
         </nav>
 
         <div className="mt-auto p-4 border-t border-[#e4e4e4]">
@@ -106,51 +87,17 @@ export default function AdminDashboard() {
               className="w-full pl-10 pr-4 py-2 rounded-md border border-[#e4e4e4] focus:outline-none focus:ring-1 focus:ring-[#4a90e2]"
             />
             <div className="absolute left-3 top-2.5 text-[#797979]">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <span>
+                <FiSearch />
+              </span>
             </div>
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="text-[#797979]">⌘ F</div>
             <div className="relative">
-              <button className="text-[#797979]">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
+              <span className="text-[#797979]">
+                <FaRegBell />
+              </span>
             </div>
             <Avatar>
               <AvatarImage src="/placeholder.svg?height=40&width=40" />
@@ -408,4 +355,5 @@ export default function AdminDashboard() {
       </div>
     </div>
   );
-}
+};
+export default AdminDashboard;
