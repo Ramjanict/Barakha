@@ -112,29 +112,6 @@ const AdminDashboard = () => {
             <h1 className="text-2xl font-bold text-[#333333]">
               Admin Dashboard
             </h1>
-            <div className="flex items-center mt-2">
-              <div className="flex -space-x-2">
-                <Avatar className="w-8 h-8 border-2 border-white">
-                  <AvatarImage src="/placeholder.svg?height=32&width=32" />
-                  <AvatarFallback>E</AvatarFallback>
-                </Avatar>
-                <Avatar className="w-8 h-8 border-2 border-white">
-                  <AvatarImage src="/placeholder.svg?height=32&width=32" />
-                  <AvatarFallback>M</AvatarFallback>
-                </Avatar>
-                <Avatar className="w-8 h-8 border-2 border-white">
-                  <AvatarImage src="/placeholder.svg?height=32&width=32" />
-                  <AvatarFallback>P</AvatarFallback>
-                </Avatar>
-                <Avatar className="w-8 h-8 border-2 border-white">
-                  <AvatarImage src="/placeholder.svg?height=32&width=32" />
-                  <AvatarFallback>+12</AvatarFallback>
-                </Avatar>
-              </div>
-              <span className="ml-2 text-sm text-[#797979]">
-                Elena, Marcus, Priya +12 others
-              </span>
-            </div>
           </div>
 
           <Tabs defaultValue="overview">
