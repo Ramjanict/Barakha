@@ -1,160 +1,170 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  BarChart,
-  Bar,
-  PieChart,
-  Pie,
-  Cell,
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
-import BarakaPagination from "../components/BarakaPagination";
-import { FaRegEdit } from "react-icons/fa";
+  Calendar,
+  ChevronLeft,
+  ChevronRight,
+  MoreHorizontal,
+} from "lucide-react";
+import { LineChart } from "../components/LineChart";
+import { BarChartComponent } from "../components/BarChartComponent";
+import { RecentActivity } from "../components/RecentActivity";
+import { CalendarView } from "../components/CalendarView";
 
-import { RiDeleteBin5Fill } from "react-icons/ri";
-
-const Overview = ({
-  activeTab,
-  productList,
-  category,
-  office,
-  categoryData,
-  COLORS,
-}) => {
+const Overview = () => {
   return (
-    <div>
-      {activeTab === "overview" && (
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {/* Summary Cards */}
-          <div className="p-6 bg-white rounded-lg shadow-sm">
-            <h3 className="mb-2 text-lg font-semibold text-gray-700">
-              Total Products
-            </h3>
-            <p className="text-3xl font-bold text-blue-600">
-              {productList.length}
-            </p>
-          </div>
+    <>
+      <div>
+        <div>
+          <h2 className="text-lg font-semibold text-[#333333] mb-4">
+            Key Metrics
+          </h2>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <Card className="border border-[#e4e4e4] shadow-sm">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium text-[#797979]">
+                  Total Users
+                </CardTitle>
+                <MoreHorizontal className="h-4 w-4 text-[#797979]" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">5,432</div>
+                <div className="text-xs text-[#34c759] mt-1">
+                  +10% this month
+                </div>
+              </CardContent>
+            </Card>
 
-          <div className="p-6 bg-white rounded-lg shadow-sm">
-            <h3 className="mb-2 text-lg font-semibold text-gray-700">
-              Categories
-            </h3>
-            <p className="text-3xl font-bold text-green-600">
-              {category.length}
-            </p>
-          </div>
+            <Card className="border border-[#e4e4e4] shadow-sm">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium text-[#797979]">
+                  Active Venues
+                </CardTitle>
+                <MoreHorizontal className="h-4 w-4 text-[#797979]" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">1,234</div>
+                <div className="text-xs text-[#34c759] mt-1">
+                  +5% this month
+                </div>
+              </CardContent>
+            </Card>
 
-          <div className="p-6 bg-white rounded-lg shadow-sm">
-            <h3 className="mb-2 text-lg font-semibold text-gray-700">
-              Global Offices
-            </h3>
-            <p className="text-3xl font-bold text-purple-600">
-              {office.length}
-            </p>
-          </div>
+            <Card className="border border-[#e4e4e4] shadow-sm">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium text-[#797979]">
+                  Monthly Revenue
+                </CardTitle>
+                <MoreHorizontal className="h-4 w-4 text-[#797979]" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">$123,456</div>
+                <div className="text-xs text-[#34c759] mt-1">
+                  +15% this month
+                </div>
+              </CardContent>
+            </Card>
 
-          <div className="p-6 bg-white rounded-lg shadow-sm md:col-span-2">
-            <h3 className="mb-4 text-lg font-semibold text-gray-700">
-              Product Categories
-            </h3>
-            <div className="h-64">
-              <ResponsiveContainer width="100%" height="100%">
-                <PieChart>
-                  <Pie
-                    data={categoryData}
-                    cx="50%"
-                    cy="50%"
-                    labelLine={false}
-                    outerRadius={80}
-                    fill="#8884d8"
-                    dataKey="value"
-                    label={({ name, percent }) =>
-                      `${name} ${(percent * 100).toFixed(0)}%`
-                    }
-                  >
-                    {categoryData.map((entry, index) => (
-                      <Cell
-                        key={`cell-${index}`}
-                        fill={COLORS[index % COLORS.length]}
-                      />
-                    ))}
-                  </Pie>
-                  <Tooltip />
-                </PieChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
-
-          <div className="p-6 bg-white rounded-lg shadow-sm md:col-span-3">
-            <h3 className="mb-4 text-lg font-semibold text-gray-700">
-              Total Products
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gra">
-                  <tr>
-                    <th className="px-6 py-3 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">
-                      Product
-                    </th>
-                    <th className="px-6 py-3 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">
-                      Category
-                    </th>
-                    <th className="px-6 py-3 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">
-                      update
-                    </th>
-                    <th className="px-6 py-3 text-xs font-bold tracking-wider text-left text-gray-500 uppercase">
-                      delete
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {productList.map((product) => (
-                    <tr key={product.id}>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex items-center">
-                          <div className="flex-shrink-0 w-10 h-10">
-                            <img
-                              className="object-cover w-10 h-10 rounded-full"
-                              src={product.image[0]}
-                              alt={product.title}
-                            />
-                          </div>
-                          <div className="ml-4">
-                            <div className="text-sm font-medium text-gray-900">
-                              {product.title}
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="text-sm text-gray-500">
-                          {product.category}
-                        </div>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <span className="text-2xl cursor-pointer ">
-                          <FaRegEdit />
-                        </span>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <span className="text-2xl cursor-pointer ">
-                          <RiDeleteBin5Fill />
-                        </span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <Card className="border border-[#e4e4e4] shadow-sm">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium text-[#797979]">
+                  Pending Approvals
+                </CardTitle>
+                <MoreHorizontal className="h-4 w-4 text-[#797979]" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">78</div>
+                <div className="text-xs text-[#ff3b30] mt-1">
+                  -2% this month
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
-      )}
-    </div>
+
+        <div className="mt-8">
+          <h2 className="text-lg font-semibold text-[#333333] mb-4">
+            Booking Trends & Revenue Insights
+          </h2>
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <Card className="border border-[#e4e4e4] shadow-sm bg-[#003366] text-white">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium">Bookings</CardTitle>
+                <MoreHorizontal className="w-4 h-4" />
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-end gap-2">
+                  <div className="text-2xl font-bold">2,345</div>
+                  <div className="text-xs text-[#34c759] mb-1">
+                    +8% this month
+                  </div>
+                </div>
+                <div className="h-[200px] mt-4">
+                  <LineChart />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-[#e4e4e4] shadow-sm bg-[#003366] text-white">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium">Earnings</CardTitle>
+                <MoreHorizontal className="w-4 h-4" />
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-end gap-2">
+                  <div className="text-2xl font-bold">7.7k</div>
+                  <div className="text-xs text-[#34c759] mb-1">
+                    +2.1% last mo
+                  </div>
+                </div>
+                <div className="h-[200px] mt-4">
+                  <BarChartComponent />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-2">
+          <Card className="border border-[#e4e4e4] shadow-sm">
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <div className="flex items-center gap-2">
+                <CardTitle className="text-sm font-medium text-[#797979]">
+                  Recent Activity
+                </CardTitle>
+                <span className="bg-[#f2f1ff] text-[#615e83] text-xs px-1.5 py-0.5 rounded-full">
+                  7
+                </span>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <RecentActivity />
+            </CardContent>
+          </Card>
+
+          <Card className="border border-[#e4e4e4] shadow-sm">
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <div className="flex items-center justify-between w-full">
+                <div className="flex items-center gap-2">
+                  <button className="p-1 rounded-full hover:bg-[#f4f4f4]">
+                    <ChevronLeft className="w-4 h-4" />
+                  </button>
+                  <CardTitle className="text-sm font-medium text-[#797979]">
+                    November 2022
+                  </CardTitle>
+                  <button className="p-1 rounded-full hover:bg-[#f4f4f4]">
+                    <ChevronRight className="w-4 h-4" />
+                  </button>
+                </div>
+                <Calendar className="h-4 w-4 text-[#797979]" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <CalendarView />
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </>
   );
 };
 
