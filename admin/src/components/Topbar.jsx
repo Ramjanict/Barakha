@@ -1,12 +1,12 @@
 import { FiSearch } from "react-icons/fi";
 import { FaRegBell } from "react-icons/fa6";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import man from "../assets/images/user.avif";
 
 const Topbar = () => {
   return (
     <>
       <div className="flex items-center justify-between p-4 border-b border-[#e4e4e4]">
-        <div className="relative w-[300px]">
+        <div className="relative w-[70%]">
           <input
             type="text"
             placeholder="Search..."
@@ -25,10 +25,10 @@ const Topbar = () => {
               <FaRegBell />
             </span>
           </div>
-          <Avatar>
-            <AvatarImage src="/placeholder.svg?height=40&width=40" />
-            <AvatarFallback>JD</AvatarFallback>
-          </Avatar>
+
+          <div className="w-10 h-10 ">
+            <img className="w-full h-full rounded-full" src={man} alt="" />
+          </div>
         </div>
       </div>
     </>

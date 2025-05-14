@@ -22,10 +22,10 @@ export function CategoryOverview() {
           className="border border-[#e4e4e4] shadow-sm"
         >
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium text-[#797979]">
+            <CardTitle className="text-sm font-bold text-[#797979]">
               {category.title}
             </CardTitle>
-            <div className="text-[#003366]">{category.icon}</div>
+            <div className="text-[#003366] text-3xl">{category.icon}</div>
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{category.count}</div>
