@@ -25,6 +25,10 @@ import {
   Trash2,
   Package,
 } from "lucide-react";
+import { LuTally1 } from "react-icons/lu";
+import { FiEdit } from "react-icons/fi";
+import { RiDeleteBinLine } from "react-icons/ri";
+
 import { productList } from "../assets/Data";
 import { categories } from "../assets/Data";
 
@@ -137,23 +141,26 @@ export function ProductTable() {
                       {product.category}
                     </Badge>
                   </TableCell>
+
                   <TableCell className="text-right">
-                    <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                        <Button variant="ghost" className="w-8 h-8 p-0">
-                          <span className="sr-only">Open menu</span>
-                          <MoreHorizontal className="w-4 h-4" />
-                        </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end">
-                        <DropdownMenuItem className="flex items-center gap-2">
-                          <Edit className="w-4 h-4" /> Edit
-                        </DropdownMenuItem>
-                        <DropdownMenuItem className="flex items-center gap-2 text-red-600">
-                          <Trash2 className="w-4 h-4" /> Delete
-                        </DropdownMenuItem>
-                      </DropdownMenuContent>
-                    </DropdownMenu>
+                    {/* <div className="flex items-center gap-2">
+                      <span className="text-3xl ">
+                        <FiEdit />
+                      </span>
+                      <span className="flex self-center justify-center text-3xl ">
+                        <LuTally1 />
+                      </span>
+                      <span className="text-3xl ">
+                        <RiDeleteBinLine />
+                      </span>
+                    </div> */}
+                    <div className="flex items-center justify-end gap-1 pr-1">
+                      <Edit className="w-6 h-6 cursor-pointer" />
+
+                      <div className="flex items-center justify-center "></div>
+
+                      <Trash2 className="w-6 h-6 cursor-pointer" />
+                    </div>
                   </TableCell>
                 </TableRow>
               ))
