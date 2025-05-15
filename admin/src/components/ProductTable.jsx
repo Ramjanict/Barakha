@@ -43,6 +43,10 @@ export function ProductTable() {
     return matchesSearch && matchesCategory;
   });
 
+  const getCategoryIcon = (categoryTitle) => {
+    const category = categories.find((cat) => cat.title === categoryTitle);
+    return category ? category.icon : null;
+  };
   return (
     <div className="space-y-4">
       <div className="flex flex-col justify-between gap-4 sm:flex-row">
@@ -61,7 +65,7 @@ export function ProductTable() {
               <Button variant="outline" className="flex gap-2">
                 {selectedCategory ? (
                   <>
-                    {/* {getCategoryIcon(selectedCategory)} */} ramjanands
+                    {getCategoryIcon(selectedCategory)}
                     <span>{selectedCategory}</span>
                   </>
                 ) : (
@@ -129,7 +133,7 @@ export function ProductTable() {
                       variant="outline"
                       className="flex items-center gap-1 w-fit"
                     >
-                      {/* {getCategoryIcon(product.category)} */} ramjan
+                      {getCategoryIcon(product.category)}
                       {product.category}
                     </Badge>
                   </TableCell>

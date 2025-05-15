@@ -1,3 +1,4 @@
+import ProductForm from "../components/ProductForm";
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import Overview from "./Overview";
@@ -9,7 +10,7 @@ const AdminDashboard = () => {
   return (
     <div className="flex h-screen bg-[#fafafa]">
       <Sidebar setActiveTab={setActiveTab} />
-      <div className="flex-1 overflow-auto p-6">
+      <div className="flex-1 p-6 overflow-auto">
         <Topbar />
 
         <div className="py-6">
@@ -18,6 +19,7 @@ const AdminDashboard = () => {
 
         {activeTab == "overview" && <Overview />}
         {activeTab == "products" && <Products />}
+        <ProductForm />
       </div>
     </div>
   );
