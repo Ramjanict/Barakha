@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import connectDB from "./Config/mongobd.js";
+import "dotenv/config";
 
 //app config
 const app = express();
