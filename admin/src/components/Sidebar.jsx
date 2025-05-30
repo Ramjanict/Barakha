@@ -23,7 +23,7 @@ const Sidebar = ({ setActiveTab }) => {
   const [active, setActive] = useState("Dashboard");
 
   return (
-    <div className="w-[240px] bg-white border-r border-[#e4e4e4] flex flex-col">
+    <div className="w-[240px] h-full bg-white border-r border-[#e4e4e4] flex flex-col">
       <div className="p-6">
         <div className=" max-w-34">
           <img src={logo} className="" />

@@ -16,25 +16,21 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import {
-  ChevronDown,
-  Edit,
-  MoreHorizontal,
-  Plus,
-  Search,
-  Trash2,
-  Package,
-} from "lucide-react";
+import { ChevronDown, Edit, Plus, Search, Trash2, Package } from "lucide-react";
 import { LuTally1 } from "react-icons/lu";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBinLine } from "react-icons/ri";
 
 import { productList } from "../assets/Data";
 import { categories } from "../assets/Data";
+import ProductForm from "./ProductForm";
 
 export function ProductTable() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [addProduct, setAdProduct] = useState(false);
+
+  console.log("addProduct", addProduct);
 
   // Filter products based on search term and selected category
   const filteredProducts = productList.filter((product) => {
@@ -97,12 +93,14 @@ export function ProductTable() {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button className="bg-[#003366]">
+          <Button onClick={() => setAdProduct(true)} className="bg-[#003366]">
             <Plus className="w-4 h-4 mr-2" />
             Add Product
           </Button>
         </div>
       </div>
+
+      {addProduct && <ProductForm />}
 
       <div className="border rounded-md">
         <Table>
