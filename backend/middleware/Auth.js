@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 
 // admin authentication middleware
-const authAdnin = async (req, res, next) => {
+const auth = async (req, res, next) => {
   try {
     const { token } = req.headers;
 
@@ -16,6 +16,8 @@ const authAdnin = async (req, res, next) => {
     }
     // decode token
     const decode_token = jwt.verify(token, process.env.JWT_SECRET);
+
+    console.log("decode_token", decode_token);
     if (decode_token !== process.env.ADMIN_EMAIL) {
       return res.json(
         res.json({
@@ -34,4 +36,4 @@ const authAdnin = async (req, res, next) => {
   }
 };
 
-export default authAdnin;
+export default auth;

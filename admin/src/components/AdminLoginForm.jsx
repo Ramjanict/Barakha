@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useAdminStore } from "../store/AdminStore";
 
 const AdminLoginForm = () => {
+  const { token, login, isLoading } = useAdminStore();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
+    await login({ email, password });
     console.log({ email, password });
   };
 
@@ -50,7 +52,7 @@ const AdminLoginForm = () => {
                 placeholder="Enter your phone number"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full p-4 border rounded-md"
+                className="w-full p-6 border rounded-md"
                 required
               />
             </div>
@@ -65,16 +67,16 @@ const AdminLoginForm = () => {
                 placeholder="Enter your phone number"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full p-4 border rounded-md"
+                className="w-full p-6 border rounded-md"
                 required
               />
             </div>
 
             <Button
               type="submit"
-              className="w-full p-6 bg-[#003366] hover:bg-[#034e99] text-white font-medium rounded-md transition-colors"
+              className="w-full p-6 bg-[#003366] hover:bg-[#034e99] text-white font-medium rounded-md transition-colors cursor-pointer"
             >
-              Log In
+              {isLoading ? " Logging" : " Log In"}
             </Button>
           </form>
         </div>

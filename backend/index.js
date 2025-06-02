@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import connectDB from "./Config/mongobd.js";
 import "dotenv/config";
+import adminRouter from "./Routes/userRoutes.js";
 
 //app config
 const app = express();
@@ -14,6 +15,7 @@ connectDB();
 app.use(express.json());
 app.use(cors());
 
+app.use("/api/admin", adminRouter);
 //endpoints
 app.get("/", (req, res) => {
   res.send("Api Connected Successfully");

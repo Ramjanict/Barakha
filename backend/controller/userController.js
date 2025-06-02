@@ -3,9 +3,9 @@ import bcrypt from "bcrypt";
 import userModel from "../models/userModel.js";
 import { v2 as cloudinary } from "cloudinary";
 import jwt from "jsonwebtoken";
-import Stripe from "stripe";
+
 //ApI for register user
-const registerUser = async (req, res) => {
+const signup = async (req, res) => {
   try {
     const { name, email, password } = req.body;
     if (!name || !email || !password) {
@@ -38,7 +38,7 @@ const registerUser = async (req, res) => {
     const user = await newUser.save();
 
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
-    res.json({ success: true, token });
+    res.json({ success: true, token, message: "Signup successful", user });
   } catch (error) {
     console.log("error", error);
     res.json({ success: false, message: error.message });
@@ -109,9 +109,4 @@ const updateProfile = async (req, res) => {
   }
 };
 
-export {
-  registerUser,
-  loginUser,
-  getProfile,
-  updateProfile,
-};
+export { signup, loginUser, getProfile, updateProfile };

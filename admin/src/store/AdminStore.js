@@ -18,11 +18,11 @@ export const useAdminStore = create(
       login: async (loginUser) => {
         set({ isLoading: true });
         try {
-          const response = await axiosSecure.post("/auth/login", loginUser);
+          const response = await axiosSecure.post("api/admin/login", loginUser);
           const data = response.data;
 
-          if (data && data.data?.accessToken) {
-            set({ token: data.data.accessToken });
+          if (data?.success) {
+            set({ token: data.token });
             toast.success(data.message || "Login successful");
           } else {
             toast.error(data.message || "Login failed");

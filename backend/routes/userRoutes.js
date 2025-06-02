@@ -1,20 +1,17 @@
 import express from "express";
 
+import {
+  getProfile,
+  loginUser,
+  signup,
+  updateProfile,
+} from "../controller/userController.js";
+import auth from "../Middleware/Auth.js";
 
-import upload from "../middlewares/multer.js";
-import { getProfile, loginUser, registerUser } from "../controller/userController.js";
-import authAdnin from "../middleware/Auth.js";
-const userRouter = express.Router();
+const adminRouter = express.Router();
 
-userRouter.post("/register", registerUser);
-userRouter.post("/login", loginUser);
-userRouter.get("/get-profile", authAdnin, getProfile);
+adminRouter.post("/signup", signup);
+adminRouter.post("/login", loginUser);
+adminRouter.get("/user", auth, getProfile);
 
-userRouter.post(
-  "/update-profile",
-  upload.single("image"),
-  authUser,
-  updateProfile
-);
-
-export default userRouter;
+export default adminRouter;

@@ -4,14 +4,13 @@ import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import Overview from "./Overview";
 import Products from "./Products";
+import { useAdminStore } from "../store/AdminStore";
 
 const AdminDashboard = () => {
+  const { token } = useAdminStore();
   const [activeTab, setActiveTab] = useState("overview");
 
-  // Simulate auth token check — replace with actual auth logic
-  const token = true;
-
-  if (token) {
+  if (!token) {
     return <AdminLoginForm />;
   }
 
